@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    color: $black;
+    scroll-behavior: smooth;
+}
+
+body {    
+    font-family: 'Montserrat', sans-serif;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    box-sizing: border-box;    
+}
+
