@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 html {
     box-sizing: border-box;
     font-size: 10px;
@@ -13,9 +8,20 @@ html {
 }
 
 body {    
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     overflow-wrap: break-word;
     word-wrap: break-word;
     box-sizing: border-box;    
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
 }
 
