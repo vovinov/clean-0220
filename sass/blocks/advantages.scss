@@ -1,0 +1,19 @@
+.advantages-row {
+    margin-bottom: 35px;
+}
+
+
+.advantages-cell {
+    display: flex;
+    align-items: center;
+}
+
+.advantages-cell__icon {
+    margin-right: 10px;
+}
+
+.advantages-cell__text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+}

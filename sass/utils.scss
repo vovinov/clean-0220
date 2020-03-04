@@ -5,19 +5,37 @@
     text-align: center;
 }
 
-.section__icon {
-    width: 51px;
-    height: 51px;
-    fill: $primary;
-    position: relative;
+.section__row {
+    margin-bottom: 75px;
+}
 
+.section__icon {
+    position: relative; 
+
+    &::before,
     &::after {
         content: "";
-        position:absolute;
-        top: 0;
-        left: 0;
+        position: absolute;
+        top: 50%;        
         background-color: $primary;
-        width: 10px;
+        width: 50px;
         height: 3px;
     } 
+
+    &::before {
+        left: -66px;
+    }
+
+    &::after {
+        left: 66px;
+    }
+}
+
+.section__svg {
+    width: 51px;
+    height: 51px;
+    fill: $primary;  
+    position: relative; 
+
+    
 }

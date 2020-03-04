@@ -1,0 +1,53 @@
+.prices-card {
+    padding: 20px;
+    border: 2px solid $primary;
+    border-radius: 5px;
+
+}
+
+.prices-card__heading {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.prices-card_buttons {
+    width: 100%;
+    margin-bottom: 13px;
+}
+
+.prices-card_button {
+    border: 1px solid $primary;
+    box-shadow: 4px 4px 10px rgba($color: #000000, $alpha: 0.2);
+    padding: 10px 47px;
+    width: 50%;
+    background-color: $white;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.prices-card__select {
+    border: 1px solid $primary;
+    width: 100%;
+    margin-bottom: 32px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.prices-card__img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 16px;
+    vertical-align: middle;
+
+    & img {
+        object-fit: cover;
+    }
+}
+
+.prices-card__price {
+    align-self: flex-end;
+    font-size: 36px;
+    font-weight: 700;
+    color: $primary;
+}
