@@ -1,0 +1,38 @@
+
+.calculator__heading {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.calculator__row {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.calculator__option {
+    width: 50%;
+    font-size: 17px;
+    font-weight: 700;
+    color: $white;
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+}
+
+.calculator__select {
+    width: 50%;
+    font-weight: 700;
+    font-size: 16px;
+
+    &--text {
+        font-weight: 700;
+    }
+}
+
+.calculator__input {
+    width: 50%;
+    font-weight: 700;
+    font-size: 16px;
+    padding-left: 5px;
+}
