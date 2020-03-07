@@ -550,18 +550,122 @@ h1, h2, h3, h4, p {
   color: #1098F7; }
 
 .stages__text {
+  position: relative;
   font-size: 18px;
   font-weight: 700; }
+  .stages__text--left::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -65px;
+    width: 20px;
+    height: 3px;
+    background-color: #1098F7; }
+  .stages__text--left-2::before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: -145px;
+    width: 20px;
+    height: 3px;
+    background-color: #1098F7; }
 
 .stages__icon {
-  width: 60px;
-  height: 60px; }
+  width: 40px;
+  height: 40px; }
 
-.stages__number {
+.stages__circle {
+  position: relative;
   width: 60px;
   height: 60px;
   border: 3px solid #1098F7;
   border-radius: 50%; }
+  .stages__circle--1::before {
+    position: absolute;
+    content: '';
+    top: -74px;
+    left: 50%;
+    width: 3px;
+    height: 74px;
+    background-color: #1098F7; }
+  .stages__circle--1::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    width: 3px;
+    height: 72px;
+    background-color: #1098F7; }
+  .stages__circle--2::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    width: 3px;
+    height: 84px;
+    background-color: #1098F7; }
+  .stages__circle--3::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    width: 3px;
+    height: 71px;
+    background-color: #1098F7; }
+  .stages__circle--4::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    width: 3px;
+    height: 69px;
+    background-color: #1098F7; }
+  .stages__circle--5::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 50%;
+    width: 3px;
+    height: 100px;
+    background-color: #1098F7; }
+
+.stages__number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #1098F7;
+  font-weight: 700; }
+
+@media (max-width: 1200px) {
+  .stages__text {
+    position: relative;
+    font-size: 18px;
+    font-weight: 700; }
+    .stages__text--left::before {
+      content: none; }
+    .stages__text--left-2::before {
+      content: none; }
+  .stages__circle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #1098F7;
+    border-radius: 50%; }
+    .stages__circle--1::before {
+      content: none; }
+    .stages__circle--1::after {
+      content: none; }
+    .stages__circle--2::after {
+      content: none; }
+    .stages__circle--3::after {
+      content: none; }
+    .stages__circle--4::after {
+      content: none; }
+    .stages__circle--5::after {
+      content: none; } }
 
 .works__btn {
   background-color: #1098F7;
@@ -644,8 +748,10 @@ h1, h2, h3, h4, p {
   height: 70px; }
 
 .calculator-card__title {
+  height: 66px;
   font-size: 15px;
-  font-weight: 500; }
+  font-weight: 500;
+  vertical-align: middle; }
 
 .calculator-card__price {
   color: #1098F7;

@@ -1,0 +1,10 @@
+@mixin line($width, $height, $top, $left){
+    position: absolute;
+    content: '';
+    top: $top;
+    left: $left;
+    width: $width;
+    height: $height;
+    background-color: $primary;
+    @content;
+}

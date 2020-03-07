@@ -1,16 +1,103 @@
 .stages__text {
+    position: relative;
     font-size: 18px;
     font-weight: 700;
+
+    &--left {
+        &::before {@include line(20px, 3px, 50%, -65px)}
+    }
+
+    &--left-2 {
+        &::before {@include line(20px, 3px, 100%, -145px)}
+    }
 }
 
 .stages__icon {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 
-.stages__number {
+.stages__circle {
+    position: relative;
     width: 60px;
     height: 60px;
     border: 3px solid $primary;
     border-radius: 50%;
+
+    &--1 {
+        &::before {@include line(3px, 74px, -74px, 50%)}    
+        &::after {@include line(3px, 72px, 100%, 50%)}
+    }
+
+    &--2 {
+        &::after {@include line(3px, 84px, 100%, 50%)}
+    }
+
+    &--3 {
+        &::after {@include line(3px, 71px, 100%, 50%)}
+    }
+
+    &--4 {
+        &::after {@include line(3px, 69px, 100%, 50%)}
+    }
+
+    &--5 {
+        &::after {@include line(3px, 100px, 100%, 50%)}
+    }
+}
+
+.stages__number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: $primary;
+    font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+
+    .stages__text {
+        position: relative;
+        font-size: 18px;
+        font-weight: 700;
+    
+        &--left {    
+            &::before {content: none;}
+        }
+    
+        &--left-2 {    
+            &::before {content: none;}
+        }
+    }  
+    
+    .stages__circle {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        border: 3px solid $primary;
+        border-radius: 50%;
+    
+        &--1 {    
+            &::before {content: none;}        
+            &::after {content: none;}
+        }
+    
+        &--2 {    
+            &::after {content: none;}
+        }
+    
+        &--3 {    
+            &::after {content: none;}
+        }
+    
+        &--4 {    
+            &::after {content: none;}
+        }
+    
+        &--5 {    
+            &::after {content: none;}
+        }
+    }
 }

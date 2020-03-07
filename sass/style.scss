@@ -2,6 +2,7 @@
 @import "./normalize";
 @import "./variables";
 @import "./core";
+@import "./mixins";
 @import "./utils";
 
 @import "./blocks/intro";
@@ -14,6 +15,8 @@
 @import "./blocks/works";
 @import "./blocks/comments";
 @import "./blocks/calculator";
-
-
 @import "./blocks/footer";
+
+@import "./plugins/twentytwenty"
+
+
