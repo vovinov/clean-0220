@@ -43,9 +43,12 @@
 }
 
 .calculator-card {
-    width: 100%;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 3px solid $primary;
-    padding: 7px 15px;
+    padding: 12px 15px;
 }
 
 .calculator-card__img {
@@ -54,15 +57,21 @@
 }
 
 .calculator-card__title {
-    height: 66px;   
+    //height: 66px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+}
+
+.calculator-card__name { 
     font-size: 15px;
     font-weight: 500;
-    vertical-align: middle;
 }
 
 .calculator-card__price {
     color: $primary;
-    font-size: 12px;
+    font-size: 17px;
     font-weight: 700;
 }
 

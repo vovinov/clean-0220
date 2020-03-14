@@ -7,7 +7,7 @@ module.exports = function() {
                     overrideBrowserslist: ['last 2 versions']
                 }))
                 .pipe($.gp.rename('style.min.css'))                
-                .pipe($.gulp.dest('css')) 
-                .pipe($.browserSync.stream())                       
+                .pipe($.gulp.dest('build/css')) 
+                .pipe($.browserSync.stream());                       
     });
 };

@@ -7,6 +7,9 @@
     <title>Template</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link type="text/css" href="/css/before-after.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/slick-theme.css"/>
     <link rel="stylesheet" href="/css/style.min.css">
 </head>
 <body>
@@ -47,6 +50,9 @@
                 <p class="col intro__subheading">Профессиональная уборка квартиры, дома, коттеджа, офиса</p>
             </div>
             <button class="btn intro__btn ">ЗАКАЗАТЬ</button>
+            <a type="button" class="calculator-button" href="./calculator.html">
+                <img src="./img/calc-button.svg" alt="Calculator_button" class="calculator-button__img">
+            </a>
         </div>
     </section>
     <main>
@@ -114,19 +120,8 @@
                         </div>
                         <button class="btn services-card__button">подробнее</button>
                     </div>
-                </div>
-                
+                </div>                
             </div> 
-            <div class="row justify-content-center">
-                <div class="services-pagination btn-group">
-                    <button type="button" class="btn services-pagination__button">
-                        <span class="services-pagination__arrow">&lt;</span>
-                    </button>
-                    <button type="button" class="btn services-pagination__button">
-                        <span class="services-pagination__arrow">&gt;</span>
-                    </button>
-                </div>
-            </div>
         </section>
         <section class="container">
             <h2 class="section__heading mb-5">ПОЧЕМУ МЫ?</h2>    
@@ -249,7 +244,7 @@
             </div>
             <div class="row mb-5">
                 <div class="col-md-11 ml-auto">
-                    <p class="stages__text stages__text--left">Химчистка дивана, кресла, матраса и стульев выполняется на дому или в офисе заказчика по технологии влажной химчистки с использованием современного оборудования, эффективных чистящих средств и пятновыводителей импортного производства.</p>
+                    <p class="stages__text stages__text--left">Химчистка дивана, кресла, матраса и стульев выполняется на дому или в офисе заказчика по технологии влажной химчистки с использованием современного оборудования, эффективных чистящих средств и пятновыводителей импортного производства</p>
                 </div>    
             </div>
             <div class="row align-items-center mb-5">
@@ -269,7 +264,7 @@
                     </div>
                 </div> 
                 <div class="col-md-11">
-                    <p class="stages__text">Предварительное тестирование обивки мягкой мебели. Тщательный осмотр мягкой мебели с целью определения наиболее подходящих чистящих средств и пятновыводителей. Определение влияния влаги и химических чистящих растворов на тканевую поверхность мягкой мебели. Тестирование производится на небольшом участке обивки мебели в незаметном месте. Тестирование позволяет определить не вызовет ли химическое чистящее вещество изменения цвета и структуры обивки мягкой мебели.</p>
+                    <p class="stages__text">Предварительное тестирование обивки мягкой мебели. Тщательный осмотр мягкой мебели с целью определения наиболее подходящих чистящих средств и пятновыводителей. Определение влияния влаги и химических чистящих растворов на тканевую поверхность мягкой мебели. Тестирование производится на небольшом участке обивки мебели в незаметном месте. Тестирование позволяет определить не вызовет ли химическое чистящее вещество изменения цвета и структуры обивки мягкой мебели</p>
                 </div>    
             </div>
             <div class="row align-items-center mb-5">
@@ -279,7 +274,7 @@
                     </div>
                 </div> 
                 <div class="col-md-11">
-                    <p class="stages__text">Обработка мягкой мебели химическим чистящих средством. На мягкую мебель наносится специальный раствор. Для более эффективного отрыва частиц грязи от ткани обивки мягкой мебели, производится чистка смоченной поверхности мебели мягкой щеткой или губкой.</p>
+                    <p class="stages__text">Обработка мягкой мебели химическим чистящих средством. На мягкую мебель наносится специальный раствор. Для более эффективного отрыва частиц грязи от ткани обивки мягкой мебели, производится чистка смоченной поверхности мебели мягкой щеткой или губкой</p>
                 </div>    
             </div>
             <div class="row align-items-center mb-5">
@@ -306,13 +301,13 @@
                 <div class="col-md-2 d-flex justify-content-end align-items-center">
                     <img src="./img/eco__icon.svg" alt="Eco" class="stages__icon">
                 </div> 
-                <p class="col-md-10 stages__text stages__text--left-2">Применяемые чистящие средства сертифицированы, экологически безопасны для человека и животных, позволяю удалить загрязнения и пятна, неприятные запахи различного происхождения.</p>
+                <p class="col-md-10 stages__text stages__text--left-2 mb-3">Применяемые чистящие средства сертифицированы, экологически безопасны для человека и животных, позволяю удалить загрязнения и пятна, неприятные запахи различного происхождения.</p>
             </div>
             <div class="row">
                 <div class="col-md-2 d-flex justify-content-end align-items-center">
                     <img src="./img/clock__icon.svg" alt="Clock" class="stages__icon">
                 </div> 
-                <p class="col-md-10 stages__text">Применяемые чистящие средства сертифицированы, экологически безопасны для человека и животных, позволяю удалить загрязнения и пятна, неприятные запахи различного происхождения.</p>
+                <p class="col-md-10 stages__text">Время высыхания объекта чистки 8-12 часов, в зависимости от температуры, влажности, протока воздуха в помещении</p>
             </div>
         </section> 
         <section class="container">
@@ -323,15 +318,33 @@
                 </div>
             </div>
             <div class="row justify-content-center mb-5">
-                <div id="container1" class="twentytwenty-container col-md-10 works__img text-center">
-                    <!-- The before image is first -->
-                    <img src="http://placehold.it/400x200&amp;text=1" />
-                    <!-- The after image is last -->
-                    <img src="http://placehold.it/400x200&amp;text=2" />
-                </div>
-                <!-- <div class="col-md-10 works__img text-center">
-                    <img src="./img/work.jpg" alt="Work1">
-                </div> -->
+                <div class="col-md-10 works__img text-center ba-slider">
+                    <img src="/img/work1-before.jpg" />
+                    <div class="resize">
+                        <img src="/img/work1-after.jpg" />
+                    </div>
+                    <span class="handle"></span>
+                 </div>                
+            </div>
+            <div class="row my-5 slider-works">
+                <a>
+                    <img src="./img/work2-before-small.jpg" alt="Work-2">
+                </a>
+                <a>
+                    <img src="./img/work2-before-small.jpg" alt="Work-2">
+                </a>
+                <a>
+                    <img src="./img/work2-before-small.jpg" alt="Work-2">
+                </a> 
+                <a>
+                    <img src="./img/work2-before-small.jpg" alt="Work-2">
+                </a> 
+                <a>
+                    <img src="./img/work2-before-small.jpg" alt="Work-2">
+                </a> 
+                <a>
+                    <img src="./img/work2-before-small.jpg" alt="Work-2">
+                </a>  
             </div>
             <div class="row justify-content-center mt-5">
                 <button class="btn works__btn">БОЛЬШЕ РАБОТ</button>
@@ -345,10 +358,10 @@
                 </div>
             </div>
             <div class="row justify-content-center align-items-center">
-                <div class="col-md-3 text-center">
+                <div class="text-center">
                     <img class="img-fluid" src="./img/comments.jpg" alt="Comment">
                 </div>
-                <div class="col-md-6 text-center">
+                <div class="col-sm-6 text-center">
                     <h3 class="comments_heading">Наталья Орейро</h3>
                     <p class="comments_text">Velit aliquip pariatur dolor magna consequat cupidatat Lorem fugiat exercitation veniam dolor mollit laborum. Elit labore esse et ipsum aute est aute occaecat ex proident excepteur elit tempor veniam. Laboris fugiat est nostrud adipisicing magna aute. Amet labore consectetur velit sit qui incididunt amet aute ad enim ullamco quis esse et.</p>
                     <ul class="comments-star__list">
@@ -382,7 +395,7 @@
             </div>
         </section>   
     </main>
-    <footer class="footer">
+    <footer class="footer py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 footer__contacts">
@@ -430,226 +443,8 @@
                 </div>
             </div>
         </div>
-    </footer>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">                    
-                    <h2 class="calculator__heading">КАЛЬКУЛЯТОР</h2>                   
-                    <div class="calculator__row">
-                        <div class="calculator__option">
-                            <span class="ml-3">Выберите тип уборки</span>  
-                        </div>
-                        <select class="custom-select calculator__select">
-                            <option selected class="calculator__select--text">Генеральная уборка</option>
-                            <option value="1" class="calculator__select--text"></option>
-                            <option value="2" class="calculator__select--text"></option>
-                            <option value="3" class="calculator__select--text"></option>
-                        </select>                        
-                    </div> 
-                    <div class="calculator__row">
-                        <div class="calculator__option">
-                            <span class="ml-3">Выберите услугу</span>  
-                        </div>
-                        <select class="custom-select calculator__select">
-                            <option selected class="calculator__select--text">Уборка квартир</option>
-                            <option value="1" class="calculator__select--text"></option>
-                            <option value="2" class="calculator__select--text"></option>
-                            <option value="3" class="calculator__select--text"></option>
-                        </select>                        
-                    </div> 
-                    <div class="calculator__row">
-                        <div class="calculator__option">
-                            <span class="ml-3">Площадь помещения</span>  
-                        </div>
-                        <input class="calculator__input" type="text" placeholder="Введите метраж">                        
-                    </div> 
-                    <h2 class="calculator__heading">ДОПОЛНИТЕЛЬНО</h2> 
-                    <ul class="calculator__list row">
-                        <li class="col-lg-4 col-sm-6 calculator-item text-center">
-                            <div class="calculator-card">
-                                <div class="calculator-card__img mb-2">
-                                    <img class="img-fluid" src="./img/calculator_glasses.png" alt="Glasses">
-                                </div>
-                                <p class="calculator-card__title">Помыть посуду</p>
-                                <P class="calculator-card__price">250 руб/30 мин</P>
-                            </div>
-                        </li>
-                        <li class="col-lg-4 col-sm-6 calculator-item text-center">
-                            <div class="calculator-card">
-                                <div class="calculator-card__img mb-2">
-                                    <img class="img-fluid" src="./img/calculator_multi.png" alt="Multi">
-                                </div>
-                                <p class="calculator-card__title">Помыть СВЧ печь</p>
-                                <p class="calculator-card__price">250 руб</p>
-                            </div>
-                        </li>
-                        <li class="col-lg-4 col-sm-6 calculator-item text-center">
-                            <div class="calculator-card">
-                                <div class="calculator-card__img mb-2">
-                                    <img class="img-fluid" src="./img/calculator_friges.jpg" alt="Heat">
-                                </div>
-                                <p class="calculator-card__title">Помыть духовку</p>
-                                <p class="calculator-card__price">450 руб</p>
-                            </div>
-                        </li>
-                        <li class="col-lg-4 col-sm-6 calculator-item text-center">
-                            <div class="calculator-card">
-                                <div class="calculator-card__img mb-2">
-                                    <img class="img-fluid" src="./img/calculator_friges2.jpg" alt="Friges">
-                                </div>
-                                <p class="calculator-card__title">Помыть холодильник</p>
-                                <p class="calculator-card__price">450 руб</p>
-                            </div>
-                        </li>
-                        <li class="col-lg-4 col-sm-6 calculator-item text-center">
-                            <div class="calculator-card">
-                                <div class="calculator-card__img mb-2">
-                                    <img class="img-fluid" src="./img/calculator_kitchen-shelves.jpg" alt="Kitchen">
-                                </div>
-                                <p class="calculator-card__title">Помыть внутри кухонных шкафов</p>
-                                <P class="calculator-card__price">500 руб</P>
-                            </div>
-                        </li>
-                        <li class="col-lg-4 col-sm-6 calculator-item text-center">
-                            <div class="calculator-card">
-                                <div class="calculator-card__img mb-2">
-                                    <img class="img-fluid" src="./img/calculator_windows.jpg" alt="Windows">
-                                </div>
-                                <p class="calculator-card__title">Мойка окон</p>
-                                <P class="calculator-card__price">от 190 руб</P>
-                            </div>
-                        </li>
-                        <li class="col-lg-4 col-sm-6 calculator-item text-center">
-                            <div class="calculator-card">
-                                <div class="calculator-card__img mb-2">
-                                    <img class="img-fluid" src="./img/calculator_lamp.jpg" alt="Lamp">
-                                </div>
-                                <p class="calculator-card__title">Помыть люстру</p>
-                                <P class="calculator-card__price">350 руб/шт</P>
-                            </div>
-                        </li>
-                        <li class="col-lg-4 col-sm-6 calculator-item text-center">
-                            <div class="calculator-card">
-                                <div class="calculator-card__img mb-2">
-                                    <img class="img-fluid" src="./img/calculator_balcon.jpg" alt="Balcon">
-                                </div>
-                                <p class="calculator-card__title">Помыть балкон</p>
-                                <P class="calculator-card__price">????</P>
-                            </div>
-                        </li>
-                        <li class="col-lg-4 col-sm-6 calculator-item text-center">
-                            <div class="calculator-card">
-                                <div class="calculator-card__img mb-2">
-                                    <img class="img-fluid" src="./img/calculator_ironing.jpg" alt="Ironing">
-                                </div>
-                                <p class="calculator-card__title">Глажка белья</p>
-                                <P class="calculator-card__price">500 руб/час</P>
-                            </div>
-                        </li>
-                        <li class="col-lg-4 col-sm-6 calculator-item text-center">
-                            <div class="calculator-card">
-                                <div class="calculator-card__img mb-2">
-                                    <img class="img-fluid" src="./img/calculator_vacuum.jpg" alt="Vacuum">
-                                </div>
-                                <p class="calculator-card__title">Химчистка ковров</p>
-                                <P class="calculator-card__price">от 70 руб/м2</P>
-                            </div>
-                        </li>
-                        <li class="col-lg-4 col-sm-6 calculator-item text-center">
-                            <div class="calculator-card">
-                                <div class="calculator-card__img mb-2">
-                                    <img class="img-fluid" src="./img/calculator_tul.jpg" alt="Tul">
-                                </div>
-                                <p class="calculator-card__title">Химчистка штор</p>
-                                <P class="calculator-card__price">от 250 руб/м2</P>
-                            </div>
-                        </li>
-                        <li class="col-lg-4 col-sm-6 calculator-item text-center">
-                            <div class="calculator-card">
-                                <div class="calculator-card__img mb-2">
-                                    <img class="img-fluid" src="./img/calculator_textil.jpg" alt="Textil">
-                                </div>
-                                <p class="calculator-card__title">Химчистка тестильной мебели</p>
-                                <P class="calculator-card__price">от 250 руб/шт</P>
-                            </div>
-                        </li>
-                        <li class="col-lg-4 col-sm-6 calculator-item text-center">
-                            <div class="calculator-card">
-                                <div class="calculator-card__img mb-2">
-                                    <img class="img-fluid" src="./img/calculator_leather.jpg" alt="Leather">
-                                </div>
-                                <p class="calculator-card__title">Химчистка кожаной мебели</p>
-                                <P class="calculator-card__price">от 450 руб/шт</P>
-                            </div>
-                        </li>  
-                    </ul>  
-                </div> <!-- end col-6 -->
-                <li class="col-md-6 d-flex justify-content-center flex-wrap align-content-start">
-                    <div class="calculator-all">
-                        <h3 class="mb-3 calculator__heading text-center">ИТОГ</h3>
-                        <ul class="calculator-all__list">
-                            <li class="d-flex calculator-all__row justify-content-between">
-                                <span class="calculator-all__title">Уборка генеральная</span> 
-                                <span class="calculator-all__price">4500</span> 
-                            </li>
-                        </ul>
-                        <h3 class="mb-3 calculator-all__subheading">Дополнительные услуги</h3>
-                        <ul class="calculator-all__list calculator-all__list--bordered">
-                            <li class="d-flex calculator-all__row justify-content-between">
-                                <span class="calculator-all__title">???</span> 
-                                <span class="calculator-all__price">???</span> 
-                            </li>
-                        </ul>
-                        <div class="d-flex calculator-all__row my-5 justify-content-between">
-                            <h3 class="mb-3">ВСЕГО</h3>
-                            <span class="calculator-all__price">???</span> 
-                        </div>
-                        <button type="submit" class="btn calculator-all__btn">ОФОРМИТЬ ЗАКАЗ</button>
-                    </div>
-                    <ul class="calculator-stages">
-                        <li class="row justify-content-between align-items-center mb-4">
-                            <div class="col-md-4 align-self-center">
-                                <div class="calculator-stages__block">
-                                    <span class="calculator-stages__number">1</span>
-                                </div>                            
-                            </div>                            
-                            <p class="col-md-8 calculator-stages__text col-md-6">Связываетесь удобным для Вас способом</p>
-                        </li>
-                        <li class="row justify-content-between align-items-center mb-4">
-                            <div class="col-md-4 align-self-center">
-                                <div class="calculator-stages__block">
-                                    <span class="calculator-stages__number">2</span>
-                                </div>                            
-                            </div>                            
-                            <p class="col-md-8 calculator-stages__text col-md-6">Ориентировочную стоимость вы можете посчитать с помощью калькулятора на сайте. Операторы call-центра всегда дают точную стоимость услуг, никаких доплат на месте</p>
-                        </li>
-                        <li class="row justify-content-between align-items-center mb-4">
-                            <div class="col-md-4 align-self-center">
-                                <div class="calculator-stages__block calculator-stages__block--20">
-                                    <span class="calculator-stages__number">3</span>
-                                </div>                            
-                            </div>                            
-                            <p class="col-md-8 calculator-stages__text col-md-6">В назначенные дату и время на объект приезжает бригада специалистов</p>
-                        </li>
-                        <li class="row justify-content-between align-items-center">
-                            <div class="col-md-4 align-self-center">
-                                <div class="calculator-stages__block calculator-stages__block--0">
-                                    <span class="calculator-stages__number">4</span>
-                                </div>                            
-                            </div>                            
-                            <p class="col-md-8 calculator-stages__text col-md-6">Приёмка работ и оплата</p>
-                        </li>
-                    </ul>
-                </div>  <!-- end col-6 -->
-            </div> <!-- end row -->
-        </div>
-    </section>
-    
-    
+    </footer> 
     <script src="https://kit.fontawesome.com/491b8eb571.js" crossorigin="anonymous"></script>
-    <script src="./js/jquery-3.4.1.min.js"></script>
-    <script src="./js/jquery.event.move.js"></script>
-    <script src="./js/jquery.twentytwenty.js"></script>   
+    <script src="./js/all.min.js"></script>   
 </body>
 </html>

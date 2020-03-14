@@ -39,20 +39,3 @@
     background-color: $primary;
     margin-top: 28px;
 }
-
-.services-pagination__button {
-    width: 60px;
-    height: 50px;
-    border: 1px solid $primary;
-    border-radius: 100px;
-    position: relative;
-}
-
-.services-pagination__arrow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 35px;
-    font-weight: 700;
-}

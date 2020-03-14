@@ -43,3 +43,24 @@
     font-weight: 700;
     border-radius: 10px;
 }
+
+.calculator-button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid $white;
+    background-color: $primary;
+    position: fixed;
+    top: 50%;
+    right: 40px;
+    z-index: 1;
+    cursor: pointer;
+    animation: pulse 3s linear infinite;
+}
+
+.calculator-button__img {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
