@@ -1,6 +1,7 @@
 .intro {
     background-image: url('../../img/main.jpg');
     background-size: cover;
+    margin-bottom: 50px;
 }
 
 .header__logo {
@@ -10,9 +11,13 @@
 
 .header__phone {
     font-weight: 700;
-    font-size: 28px;
+    font-size: 25px;
     line-height: 33px;
     color: $white;
+
+    @media (max-width: 900px) {
+        color: $black;
+    }
 }
 
 .intro__heading {
