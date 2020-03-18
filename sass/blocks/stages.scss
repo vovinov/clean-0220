@@ -4,11 +4,11 @@
     font-weight: 700;
 
     &--left {
-        &::before {@include line(20px, 3px, 50%, -65px)}
+        &::before {@include line(20px, 3px, 50%, -109px)}
     }
 
     &--left-2 {
-        &::before {@include line(20px, 3px, 100%, -145px)}
+        &::before {@include line(20px, 3px, 100%, -190px)}
     }
 }
 
@@ -17,10 +17,12 @@
     height: 40px;
 }
 
+
 .stages__circle {
     position: relative;
     width: 60px;
     height: 60px;
+    margin: 0 auto;
     border: 3px solid $primary;
     border-radius: 50%;
 
@@ -34,15 +36,15 @@
     }
 
     &--3 {
-        &::after {@include line(3px, 71px, 100%, 50%)}
+        &::after {@include line(3px, 81px, 100%, 50%)}
     }
 
     &--4 {
-        &::after {@include line(3px, 69px, 100%, 50%)}
+        &::after {@include line(3px, 81px, 100%, 50%)}
     }
 
     &--5 {
-        &::after {@include line(3px, 100px, 100%, 50%)}
+        &::after {@include line(3px, 127px, 100%, 50%)}
     }
 }
 
@@ -54,6 +56,10 @@
     font-size: 40px;
     color: $primary;
     font-weight: 700;
+}
+
+.stages__small-icon {
+    justify-content: flex-end;
 }
 
 @media (max-width: 1200px) {
@@ -84,20 +90,23 @@
             &::after {content: none;}
         }
     
-        &--2 {    
-            &::after {content: none;}
-        }
+        &--2 { &::after {content: none;} }
     
-        &--3 {    
-            &::after {content: none;}
-        }
+        &--3 { &::after {content: none;} }
     
-        &--4 {    
-            &::after {content: none;}
-        }
+        &--4 { &::after {content: none;} }
     
-        &--5 {    
-            &::after {content: none;}
-        }
+        &--5 { &::after {content: none;} }
+    }
+}
+
+@media (max-width: 768px) {
+    .stages__row {
+        margin-bottom: 15px;
+    }
+
+    .stages__small-icon {
+        justify-content: center;
+        margin-bottom: 15px;
     }
 }

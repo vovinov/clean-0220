@@ -7,16 +7,16 @@
     <title>Template</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link type="text/css" href="/css/slick.css" rel="stylesheet">
+    <link type="text/css" href="/css/slick-theme.css" rel="stylesheet">
     <link type="text/css" href="/css/before-after.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/css/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/slick-theme.css"/>
     <link rel="stylesheet" href="/css/style.min.css">
 </head>
 <body>
     <section class="intro">
         <div class="container">
             <div class="row align-items-center pt-5">
-                <div class="col">
+                <div class="col header__img">
                     <img src="./img/logo.png" alt="Logo" class="header__logo">
                 </div>
                 <p class="header__phone col-md-3">8-800-123-45-67</p>
@@ -159,16 +159,16 @@
                 </div>
             </div>
             <div class="row mb-5">
-                <button class="btn col-md-2 about__btn">ГОСТИННАЯ</button>
-                <button class="btn col-md-2 about__btn">КОМНАТА</button>
-                <button class="btn col-md-2 about__btn">ВАННАЯ</button>
-                <button class="btn col-md-2 about__btn">КУХНЯ</button>
-                <button class="btn col-md-2 about__btn">КОВЕР</button>
-                <button class="btn col-md-2 about__btn">ДИВАН</button>
+                <button class="btn col-md-2 about__btn about__btn--active" value="Living_room">ГОСТИННАЯ</button>
+                <button class="btn col-md-2 about__btn" value="Room">КОМНАТА</button>
+                <button class="btn col-md-2 about__btn" value="Bathroom">ВАННАЯ</button>
+                <button class="btn col-md-2 about__btn" value="Kitchen">КУХНЯ</button>
+                <button class="btn col-md-2 about__btn" value="Carpet">КОВЕР</button>
+                <button class="btn col-md-2 about__btn" value="Sofa">ДИВАН</button>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-10 text-center">
-                    <img src="./img/about_1.jpg" alt="Living_room" class="col-md-10">
+                    <img src="./img/about_Living_room.png" alt="Living_room" class="col-md-10 about__img">
                 </div>
             </div>
         </section>
@@ -183,28 +183,31 @@
                 <div class="col-md-4">
                     <h3 class=" prices-card__heading">Стулья</h3>
                     <div class="card prices-card align-items-center">
-                        <div class="btn-group prices-card_buttons">
-                            <button class="prices-card_button">КОЖА</button>
-                            <button class="prices-card_button">ТКАНЬ</button>
+                        <div class="prices-card-switch">
+                            <input type="checkbox" id="switcher-1" class="prices-card-switch__input">
+                            <label for="switcher-1" class="prices-card-switch__label"></label>
                         </div>
-                        <select name="" id="" class="prices-card__select">
+                        <select name="" id="chairs-select" class="prices-card__select">
                             <option value="">со спинкой</option>
                             <option value="">без спинки</option>
                         </select>
                         <div class="prices-card__img">
                             <img src="./img/styl1.jpg" alt="Стул">
                         </div>
-                        <span class="prices-card__price">1000P</span>
+                        <span class="prices-card__price">
+                            <span id="prices-card__chairs">1000</span>
+                            <span>&#8381;</span>
+                        </span>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <h3 class=" prices-card__heading">Диваны</h3>
                     <div class="card prices-card align-items-center">
-                        <div class="btn-group prices-card_buttons">
-                            <button class="prices-card_button">КОЖА</button>
-                            <button class="prices-card_button">ТКАНЬ</button>
+                        <div class="prices-card-switch">
+                            <input type="checkbox" id="switcher-2" class="prices-card-switch__input">
+                            <label for="switcher-2" class="prices-card-switch__label"></label>
                         </div>
-                        <select name="" id="" class="prices-card__select">
+                        <select name="" id="sofa-select" class="prices-card__select">
                             <option value="">одноместный</option>
                             <option value="">двухместный</option>
                             <option value="">трехместный</option>
@@ -213,24 +216,30 @@
                         <div class="prices-card__img">
                             <img src="./img/chair.jpg" alt="Диван">
                         </div>
-                        <span class="prices-card__price">1000P</span>
+                        <span class="prices-card__price" >
+                            <span id="prices-card__sofa">1000</span>
+                            <span>&#8381;</span>
+                        </span>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <h3 class=" prices-card__heading">Кресла</h3>
                     <div class="card prices-card align-items-center">
-                        <div class="btn-group prices-card_buttons">
-                            <button class="prices-card_button">КОЖА</button>
-                            <button class="prices-card_button">ТКАНЬ</button>
+                        <div class="prices-card-switch">
+                            <input type="checkbox" id="switcher-3" class="prices-card-switch__input">
+                            <label for="switcher-3" class="prices-card-switch__label"></label>
                         </div>
-                        <select name="" id="" class="prices-card__select">
+                        <select name="" id="armchairs-select" class="prices-card__select">
                             <option value="">со спинкой</option>
                             <option value="">без спинки</option>
                         </select>
                         <div class="prices-card__img">
                             <img src="./img/chair-2.jpg" alt="Кресло">
                         </div>
-                        <span class="prices-card__price">1000P</span>
+                        <span class="prices-card__price">
+                            <span id="prices-card__armchairs">1000</span>
+                            <span>&#8381;</span>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -243,71 +252,71 @@
                 </div>
             </div>
             <div class="row mb-5">
-                <div class="col-md-11 ml-auto">
+                <div class="col-md-10 ml-auto">
                     <p class="stages__text stages__text--left">Химчистка дивана, кресла, матраса и стульев выполняется на дому или в офисе заказчика по технологии влажной химчистки с использованием современного оборудования, эффективных чистящих средств и пятновыводителей импортного производства</p>
                 </div>    
             </div>
             <div class="row align-items-center mb-5">
-                <div class="col-md-1">
+                <div class="col-md-2 stages__row">
                     <div class="stages__circle stages__circle--1">
                         <span class="stages__number">1</span>
                     </div>
                 </div> 
-                <div class="col-md-11">
+                <div class="col-md-10">
                     <p class="stages__text">Вакуумная чистка мягкой мебели сухим пылесосом</p>
                 </div>    
             </div>
-            <div class="row align-items-center mb-5">
-                <div class="col-md-1">
+            <div class="row align-items-center justify-content-center mb-5">
+                <div class="col-md-2 stages__row">
                     <div class="stages__circle stages__circle--2">
                         <span class="stages__number">2</span>
                     </div>
                 </div> 
-                <div class="col-md-11">
+                <div class="col-md-10">
                     <p class="stages__text">Предварительное тестирование обивки мягкой мебели. Тщательный осмотр мягкой мебели с целью определения наиболее подходящих чистящих средств и пятновыводителей. Определение влияния влаги и химических чистящих растворов на тканевую поверхность мягкой мебели. Тестирование производится на небольшом участке обивки мебели в незаметном месте. Тестирование позволяет определить не вызовет ли химическое чистящее вещество изменения цвета и структуры обивки мягкой мебели</p>
                 </div>    
             </div>
-            <div class="row align-items-center mb-5">
-                <div class="col-md-1">
+            <div class="row align-items-center mb-5 justify-content-center">
+                <div class="col-md-2 stages__row">
                     <div class="stages__circle stages__circle--3">
                         <span class="stages__number">3</span>
                     </div>
                 </div> 
-                <div class="col-md-11">
+                <div class="col-md-10">
                     <p class="stages__text">Обработка мягкой мебели химическим чистящих средством. На мягкую мебель наносится специальный раствор. Для более эффективного отрыва частиц грязи от ткани обивки мягкой мебели, производится чистка смоченной поверхности мебели мягкой щеткой или губкой</p>
                 </div>    
             </div>
-            <div class="row align-items-center mb-5">
-                <div class="col-md-1">
+            <div class="row align-items-center mb-5 justify-content-center">
+                <div class="col-md-2 stages__row">
                     <div class="stages__circle stages__circle--4">
                         <span class="stages__number">4</span>
                     </div>
                 </div> 
-                <div class="col-md-11">
+                <div class="col-md-10">
                     <p class="stages__text">Удаление грязи и химических веществ с обивки мягкой мебели. Тканевая поверхность мягкой мебели промывается водой с отсасыванием грязи, химических чистящих средств и воды с помощью экстракторной машины. Если не все загрязнения (пятна) удалены с первого раза химчистки, производится обработка трудно выводимых пятен пятновыводителем, с последующем удалением загрязнения и химического средства экстракторной машиной</p>
                 </div>    
             </div>
-            <div class="row align-items-center mb-5">
-                <div class="col-md-1">
+            <div class="row align-items-center mb-5 justify-content-center">
+                <div class="col-md-2 stages__row">
                     <div class="stages__circle stages__circle--5">
                         <span class="stages__number">5</span>
                     </div>
                 </div> 
-                <div class="col-md-11">
+                <div class="col-md-10">
                     <p class="stages__text">Окончательным этапом влажной химчистки мягкой мебели является промывка водой, вымывание, удаление грязи и химического чистящего раствора, что предохраняет заказчика от аллергических реакций на химические вещества, а так же предохраняет мягкую мебель от быстрого загрязнения</p>
                 </div>    
             </div>
             <div class="row">
-                <div class="col-md-2 d-flex justify-content-end align-items-center">
+                <div class="col-md-3 d-flex align-items-center stages__small-icon">
                     <img src="./img/eco__icon.svg" alt="Eco" class="stages__icon">
                 </div> 
-                <p class="col-md-10 stages__text stages__text--left-2 mb-3">Применяемые чистящие средства сертифицированы, экологически безопасны для человека и животных, позволяю удалить загрязнения и пятна, неприятные запахи различного происхождения.</p>
+                <p class="col-md-9 stages__text stages__text--left-2 mb-3">Применяемые чистящие средства сертифицированы, экологически безопасны для человека и животных, позволяю удалить загрязнения и пятна, неприятные запахи различного происхождения.</p>
             </div>
             <div class="row">
-                <div class="col-md-2 d-flex justify-content-end align-items-center">
+                <div class="col-md-3 d-flex align-items-center stages__small-icon">
                     <img src="./img/clock__icon.svg" alt="Clock" class="stages__icon">
                 </div> 
-                <p class="col-md-10 stages__text">Время высыхания объекта чистки 8-12 часов, в зависимости от температуры, влажности, протока воздуха в помещении</p>
+                <p class="col-md-9 stages__text">Время высыхания объекта чистки 8-12 часов, в зависимости от температуры, влажности, протока воздуха в помещении</p>
             </div>
         </section> 
         <section class="container">
@@ -327,24 +336,18 @@
                  </div>                
             </div>
             <div class="row my-5 slider-works">
-                <a>
-                    <img src="./img/work2-before-small.jpg" alt="Work-2">
-                </a>
-                <a>
-                    <img src="./img/work2-before-small.jpg" alt="Work-2">
-                </a>
-                <a>
-                    <img src="./img/work2-before-small.jpg" alt="Work-2">
-                </a> 
-                <a>
-                    <img src="./img/work2-before-small.jpg" alt="Work-2">
-                </a> 
-                <a>
-                    <img src="./img/work2-before-small.jpg" alt="Work-2">
-                </a> 
-                <a>
-                    <img src="./img/work2-before-small.jpg" alt="Work-2">
-                </a>  
+                <div class="col-md-3 slider-work">
+                    <img src="./img/work2-before-small.jpg" alt="Work-2" class="slider__img">
+                </div>   
+                <div class="col-md-3 slider-work">
+                    <img src="./img/work2-before-small.jpg" alt="Work-2" class="slider__img">
+                </div>   
+                <div class="col-md-3 slider-work">                    
+                     <img src="./img/work2-before-small.jpg" alt="Work-2" class="slider__img">                    
+                </div>  
+                <div class="col-md-3 slider-work">                    
+                        <img src="./img/work2-before-small.jpg" alt="Work-2" class="slider__img">
+                </div>             
             </div>
             <div class="row justify-content-center mt-5">
                 <button class="btn works__btn">БОЛЬШЕ РАБОТ</button>
@@ -445,6 +448,9 @@
         </div>
     </footer> 
     <script src="https://kit.fontawesome.com/491b8eb571.js" crossorigin="anonymous"></script>
-    <script src="./js/all.min.js"></script>   
+    <script src="./js/jquery.js"></script>   
+    <script src="./js/slick.min.js"></script>   
+    <script type="text/javascript" src="https://cdn.jotfor.ms/before-after/before-after.min.js"></script>
+    <script src="./js/scripts.js"></script>   
 </body>
 </html>

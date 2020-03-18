@@ -5,6 +5,7 @@ module.exports = function() {
             'fonts/**/*.{woff,woff2}',
             'img/**',
             '*.html',
+            'js/**/*.js'
         ], {
             base: '.'
         })                         

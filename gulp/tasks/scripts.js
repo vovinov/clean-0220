@@ -8,8 +8,8 @@ module.exports = function() {
         return $.gulp.src(jsFiles) 
                 .pipe($.gp.plumber())               
                 .pipe($.gp.babel({presets: ['@babel/preset-env']}))
-                .pipe($.gp.concat('all.js'))
-                .pipe($.gp.uglify())
+                // .pipe($.gp.concat('all.js'))
+                // .pipe($.gp.uglify())
                 .pipe($.gp.rename('all.min.js'))                
                 .pipe($.gulp.dest('build/js')) 
                 .pipe($.browserSync.stream());                       

@@ -1,6 +1,7 @@
 .intro {
     background-image: url('../../img/main.jpg');
     background-size: cover;
+    clip-path: polygon(100% 0, 0 0, 0 95%, 40% 95%, 50% 100%, 60% 95%, 100% 95%);
 }
 
 .header__logo {
@@ -10,9 +11,9 @@
 
 .header__phone {
     font-weight: 700;
-    font-size: 28px;
+    font-size: 30px;
     line-height: 33px;
-    color: $white;
+    color: $primary;
 }
 
 .intro__heading {
@@ -64,3 +65,16 @@
     left:50%;
     transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 576px) {
+
+    .header__img {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .header__phone {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+} 

@@ -8,4 +8,9 @@
         color: $white;
         background-color: $primary;
     }
+
+    &--active {
+        background-color: $primary;
+        color: $white;
+    }
 }
