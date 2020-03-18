@@ -115,17 +115,38 @@ selectValue3.addEventListener('change', (e) => {
   chairsValue3.textContent = value + selectedValue;
 })
 
-// Slider - works
-
 $(document).ready(function() { 
   
   // Slider - works
-  $('.slider-works').slick({
-    arrows: true,
-    infinite: true,  
-    slidesToShow: 3,
-    slidesToScroll: 1
-    // loop: true
+  $('.works-slider').slick({
+    dots: true,
+    slidesToShow: 2,
+    variableWidth: true,
+    centerMode: true,
+    autoplay: true
   });
+
+  const imgBefore = document.querySelector('.works__img--before');
+  const imgAfter = document.querySelector('.works__img--after');
+  const sliderItems = document.querySelectorAll('.works-slider__item');
+
+  sliderItems.forEach((item) => {
+    item.addEventListener('click', (e) => {
+      changeWorksImage(e.target.alt);
+    })
+  });
+
+  const changeWorksImage = (name) => {
+    imgBefore.src = `img/${name}-before.jpg`;
+    imgAfter.src = `img/${name}-after.jpg`;
+  }
+
+  // Comments - works
+  $('.comments__row').slick({
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 5000
+  })
 });
 

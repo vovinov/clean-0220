@@ -7,10 +7,16 @@
 }
 
 .works__img {    
-    height: 650px;
     overflow: hidden;
 }
 
-.slider__img {
+.works-slider {
+    min-width: 0;
+    position: relative;
+    padding: 0 50px;
+}
+
+.works-slider__item {
     cursor: pointer;
+    text-align: center;
 }

@@ -6,7 +6,7 @@
 }
 
 .section__row {
-    margin-bottom: 75px;
+    margin: 10px 0 30px 0;
 }
 
 .section__icon {
@@ -35,7 +35,12 @@
     width: 51px;
     height: 51px;
     fill: $primary;  
-    position: relative; 
-
-    
+    position: relative;  
 }
+
+@media screen and (max-width: 576px) {
+
+    .section__heading { margin-top: 20px; }
+    
+    .section__row { margin: 10px 0; }    
+} 

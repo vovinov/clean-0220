@@ -3,6 +3,13 @@
     margin-bottom: 121px;
 }
 
+.comments__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .comments_heading {
     font-size: 22px;
     font-weight: 500;
