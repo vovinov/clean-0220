@@ -2,7 +2,6 @@
     margin-bottom: 35px;
 }
 
-
 .advantages-cell {
     display: flex;
     align-items: center;
@@ -17,3 +16,14 @@
     font-weight: 700;
     line-height: 19px;
 }
+
+@media screen and (max-width: 576px) {
+
+    .advantages-row {
+        margin-bottom: 0;
+    }
+
+    .advantages-cell {
+        margin-bottom: 15px;
+    }
+} 

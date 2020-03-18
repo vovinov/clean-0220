@@ -2,6 +2,7 @@
     background-image: url('../../img/main.jpg');
     background-size: cover;
     margin-bottom: 50px;
+    clip-path: polygon(100% 0, 0 0, 0 95%, 40% 95%, 50% 100%, 60% 95%, 100% 95%);
 }
 
 .header__logo {
@@ -15,9 +16,10 @@
     line-height: 33px;
     color: $white;
 
-    @media (max-width: 900px) {
-        color: $black;
+    @media (max-width: 1200px) {
+        color: $primary;
     }
+
 }
 
 .intro__heading {
@@ -68,4 +70,17 @@
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 576px) {
+
+    .header__img {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .header__phone {
+        text-align: center;
+        margin-bottom: 15px;
+    }
 }
