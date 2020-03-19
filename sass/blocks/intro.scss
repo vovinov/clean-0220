@@ -37,12 +37,7 @@
 .intro__btn {
     margin-top: 66px;
     margin-bottom: 235px;
-    background-color: $primary;
-    padding: 11px 51px;
-    color: $white;
-    font-size: 24px;
-    font-weight: 700;
-    border-radius: 10px;
+    background-color: transparent;
 }
 
 .calculator-button {
@@ -54,9 +49,9 @@
     position: fixed;
     top: 50%;
     right: 40px;
-    z-index: 1;
+    z-index: 10;
     cursor: pointer;
-    animation: pulse 3s linear infinite;
+    animation: pulse 1.5s linear infinite;
 }
 
 .calculator-button__img {

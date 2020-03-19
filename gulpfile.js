@@ -12,7 +12,6 @@ global.$ = {
     pngquant: require('imagemin-pngquant') 
 };
 
-
 $.path.config.forEach(function (path) {
     require(path)();    
 });

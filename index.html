@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Template</title>
+    <title>Hard Clean</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link type="text/css" href="/css/before-after.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.min.css">
 </head>
 <body>
+    <a class="calculator-button" href="calculator.html" target="blank">
+        <img src="./img/calc-button.svg" alt="Calculator_button" class="calculator-button__img">
+    </a>
     <section class="intro">
         <div class="container">
             <div class="row align-items-center pt-5">
@@ -47,10 +50,7 @@
             <div class="row subheading-container">
                 <p class="col intro__subheading">Профессиональная уборка квартиры, дома, коттеджа, офиса</p>
             </div>
-            <button class="btn intro__btn ">ЗАКАЗАТЬ</button>
-            <a type="button" class="calculator-button" href="./calculator.html">
-                <img src="./img/calc-button.svg" alt="Calculator_button" class="calculator-button__img">
-            </a>
+            <a class="btn intro__btn section__btn" href="calculator.html" target="blank">ЗАКАЗАТЬ</a>
         </div>
     </section>
     <main>
@@ -169,6 +169,9 @@
                     <img src="./img/about_Living_room.png" alt="Living_room" class="col-md-10 about__img">
                 </div>
             </div>
+            <div class="row justify-content-center my-5">
+                <a class="btn section__btn" href="price-clean.html" target="blank">Полный каталог услуг</a>
+            </div>
         </section>
         <section class="container">
             <h2 class="section__heading section__heading--top">Химчистка мягкой мебели</h2>    
@@ -184,16 +187,12 @@
                         <div class="prices-card-switch">
                             <input type="checkbox" id="switcher-1" class="prices-card-switch__input">
                             <label for="switcher-1" class="prices-card-switch__label"></label>
-                        </div>
-                        <select name="" id="chairs-select" class="prices-card__select">
-                            <option value="">со спинкой</option>
-                            <option value="">без спинки</option>
-                        </select>
+                        </div>                       
                         <div class="prices-card__img">
                             <img src="./img/styl1.jpg" alt="Стул">
                         </div>
                         <span class="prices-card__price">
-                            <span id="prices-card__chairs">1000</span>
+                            <span id="prices-card__chairs">450</span>
                             <span>&#8381;</span>
                         </span>
                     </div>
@@ -205,17 +204,11 @@
                             <input type="checkbox" id="switcher-2" class="prices-card-switch__input">
                             <label for="switcher-2" class="prices-card-switch__label"></label>
                         </div>
-                        <select name="" id="sofa-select" class="prices-card__select">
-                            <option value="">одноместный</option>
-                            <option value="">двухместный</option>
-                            <option value="">трехместный</option>
-                            <option value="">четырехместный</option>
-                        </select>
                         <div class="prices-card__img">
                             <img src="./img/chair.jpg" alt="Диван">
                         </div>
                         <span class="prices-card__price" >
-                            <span id="prices-card__sofa">1000</span>
+                            <span id="prices-card__sofa">2600</span>
                             <span>&#8381;</span>
                         </span>
                     </div>
@@ -227,19 +220,18 @@
                             <input type="checkbox" id="switcher-3" class="prices-card-switch__input">
                             <label for="switcher-3" class="prices-card-switch__label"></label>
                         </div>
-                        <select name="" id="armchairs-select" class="prices-card__select">
-                            <option value="">со спинкой</option>
-                            <option value="">без спинки</option>
-                        </select>
                         <div class="prices-card__img">
                             <img src="./img/chair-2.jpg" alt="Кресло">
                         </div>
                         <span class="prices-card__price">
-                            <span id="prices-card__armchairs">1000</span>
+                            <span id="prices-card__armchairs">1500</span>
                             <span>&#8381;</span>
                         </span>
                     </div>
                 </div>
+            </div>
+            <div class="row justify-content-center my-5">
+                <a class="btn section__btn" href="price-dry.html" target="blank">Перейти к прейскуранту</a>
             </div>
         </section>
         <section class="container">
@@ -423,12 +415,13 @@
                 <div class="col-md-8 footer__form text-center">
                     <div class="form__box">
                         <h3 class="footer__heading">Связаться с нами</h3>
-                        <form class="form">                        
-                            <input type="text" id="name" placeholder="Имя" class="form-control">
-                            <input type="tel" id="phone" placeholder="Телефон" class="form-control">
-                            <input type="email" id="email" placeholder="Электронный адрес" class="form-control">
-                            <textarea name="text" id="text" rows="7" class="form-control" placeholder="Сообщение"></textarea>
-                            <button type="submit" class="btn form__button">ОТПРАВИТЬ</button>
+                        <form method="POST" action="mail.php" class="form">                        
+                            <input type="text" name="name" placeholder="Имя" class="form-control" required>
+                            <input type="tel" name="phone" placeholder="Телефон" class="form-control" required>
+                            <input type="email" name="email" placeholder="Электронный адрес" class="form-control" required>
+                            <input type="time" name="time" placeholder="Предпочтительное время звонка" class="form-control">
+                            <textarea name="text" id="text" rows="5" class="form-control" placeholder="Сообщение"></textarea>
+                            <button type="submit" class="btn form__button section__btn">ОТПРАВИТЬ</button>
                         </form>
                     </div>
                 </div>
