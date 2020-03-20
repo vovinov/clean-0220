@@ -6,17 +6,22 @@
     font-weight: 500;
 }
 
-.works__img {    
+.works__img {   
     overflow: hidden;
+    margin-bottom: 20px;
+    max-width: 100%;
+
+    &--before,
+    &--after {
+        height: 200px;
+    }
 }
 
-.works-slider {
-    min-width: 0;
-    position: relative;
-    padding: 0 50px;
-}
-
-.works-slider__item {
-    cursor: pointer;
-    text-align: center;
+@media screen and (max-width: 576px) {
+    .works__img {
+        &--before,
+        &--after { 
+            height: 300px; 
+        }
+    }
 }

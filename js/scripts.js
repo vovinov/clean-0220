@@ -2,7 +2,9 @@
  
 // Before - After
 
-$('.ba-slider').beforeAfter();
+$('.ba-slider').each(function(){
+  $(this).beforeAfter();
+});
 
 // About selector
 
