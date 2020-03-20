@@ -54,10 +54,10 @@
 .slick-arrow.slick-disabled{}
 /* Точки (булиты) */
 .slick-dots{
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
 }
 .slick-dots li{
     margin: 0 10px;
@@ -65,13 +65,13 @@
 /* Активная точка */
 .slick-dots li.slick-active button{
     background-color: $white;
-    border: 3px solid $primary;
+    border: 2px solid $primary;
 }
 /* Элемент точки */
 .slick-dots li button{
     font-size: 0;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background-color: $primary;
     border-radius: 50%;
     border: none;
