@@ -3,6 +3,7 @@
     border: 3px solid $primary;
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba($black, 0.2);
+    margin-bottom: 20px;
 
 }
 
@@ -97,6 +98,35 @@
     }
 }
 
+.prices-card-switch__input--matras {
+
+    &:before {
+        content: 'ОДНА СТОРОНА';
+        left:20px;
+    }
+    &:after {
+        content: 'ДВЕ СТОРОНЫ';
+        right:20px;
+    }
+
+    &:not(:checked) {
+
+        &+label {
+            left:10px;
+            right:250px;
+        }
+    }
+
+    &:checked {
+
+        &+label {
+           left:250px;
+           right:10px;           
+
+        }
+    }
+}
+
 .prices-card-switch__label {
     z-index:1;
     position: absolute;
@@ -116,12 +146,11 @@
 }
 
 .prices-card__img {
-    width: 200px;
-    height: 200px;
     margin-bottom: 16px;
 
     & img {
-        object-fit: cover;
+        width: 200px;
+        height: 200px;
     }
 }
 

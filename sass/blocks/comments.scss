@@ -1,6 +1,8 @@
 
 .comments { margin-bottom: 121px; }
 
+.comments__row {position: relative; }
+
 .comments__item {
     display: flex;
     flex-wrap: wrap;

@@ -181,7 +181,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <h3 class=" prices-card__heading">Стулья</h3>
                     <div class="card prices-card align-items-center">
                         <div class="prices-card-switch">
@@ -193,7 +193,7 @@
                             <option>Без спинки</option>
                         </select>                     
                         <div class="prices-card__img">
-                            <img src="./img/styl1.jpg" alt="Стул">
+                            <img class="prices-card__img--chair" src="./img/picture_chairBack_leather.jpg" alt="chairBack_leather">
                         </div>                        
                         <span class="prices-card__price">
                             <span id="prices-card__chairs">450</span>
@@ -201,7 +201,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <h3 class=" prices-card__heading">Диваны</h3>
                     <div class="card prices-card align-items-center">
                         <div class="prices-card-switch">
@@ -215,7 +215,7 @@
                             <option>Трехместный угловой</option>
                         </select> 
                         <div class="prices-card__img">
-                            <img src="./img/chair.jpg" alt="Диван">
+                            <img class="prices-card__img--sofa" src="/img/picture_sofa2_leather.jpg" alt="Диван">
                         </div>
                         <span class="prices-card__price" >
                             <span id="prices-card__sofa">2600</span>
@@ -223,7 +223,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <h3 class=" prices-card__heading">Кресла</h3>
                     <div class="card prices-card align-items-center">
                         <div class="prices-card-switch">
@@ -235,10 +235,33 @@
                             <option>Без спинки</option>
                         </select> 
                         <div class="prices-card__img">
-                            <img src="./img/chair-2.jpg" alt="Кресло">
+                            <img class="prices-card__img--armchair" src="/img/picture_armchair_leather.jpeg" alt="Кресло">
                         </div>
                         <span class="prices-card__price">
                             <span id="prices-card__armchairs">1500</span>
+                            <span>&#8381;</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class=" prices-card__heading">Матрасы</h3>
+                    <div class="card prices-card align-items-center">
+                        <div class="prices-card-switch">
+                            <input type="checkbox" id="switcher-4" class="prices-card-switch__input prices-card-switch__input--matras">
+                            <label for="switcher-4" class="prices-card-switch__label"></label>
+                        </div>
+                        <select class="prices-card__select" name="" id="select-4">
+                            <option>900x2000</option>
+                            <option>1200x2000</option>
+                            <option>1400x2000</option>
+                            <option>1600x2000</option>
+                            <option>1800x2000</option>
+                        </select> 
+                        <div class="prices-card__img">
+                            <img class="prices-card__img--matras" src="/img/picture_matrass_sm.jpg" alt="Матрас">
+                        </div>
+                        <span class="prices-card__price">
+                            <span id="prices-card__matras">1350</span>
                             <span>&#8381;</span>
                         </span>
                     </div>
@@ -366,6 +389,15 @@
                         </div>
                         <span class="handle"></span>
                     </div>
+                </div>   
+                <div class="col-md-5 works__img text-center">
+                    <div class="ba-slider">
+                        <img class="works__img--before" src="/img/work5-before.jpg" />
+                        <div class="resize">
+                            <img class="works__img--after" src="/img/work5-after.jpg" />
+                        </div>
+                        <span class="handle"></span>
+                    </div>
                 </div>             
             </div>
         </section>    
@@ -407,7 +439,7 @@
             </ul>
         </section>   
     </main>
-    <footer class="footer py-5">
+    <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 footer__contacts">
@@ -448,7 +480,12 @@
                             <input type="text" name="name" placeholder="Имя" class="form-control" required>
                             <input type="tel" name="phone" placeholder="Телефон" class="form-control" required>
                             <input type="email" name="email" placeholder="Электронный адрес" class="form-control" required>
-                            <input type="time" name="time" placeholder="Предпочтительное время звонка" class="form-control">
+                            <div class="form-group row align-items-center">
+                                <label for="input__time" class="col-8 col-form-label form__label">Предпочтительное время звонка</label>
+                                <div class="col-4">
+                                    <input type="time" name="time" class="form__time" id="input__time">
+                                </div>
+                            </div>
                             <textarea name="text" id="text" rows="5" class="form-control" placeholder="Сообщение"></textarea>
                             <button type="submit" class="btn form__button section__btn">ОТПРАВИТЬ</button>
                         </form>
