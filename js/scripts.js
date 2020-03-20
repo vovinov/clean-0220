@@ -29,42 +29,158 @@ const changeActiveClass = (node) => {
 
 // Prices chairs selector
 
+const value_chairs = {
+  leather_back: '450',
+  cloth_back: '300',
+  leather: '300',
+  cloth: '200'
+};
 
-let value = 0;
-const switchValue1 = document.querySelector('#switcher-1');
-const chairsValue1 = document.querySelector('#prices-card__chairs');
+const switchValueChairs = document.querySelector('#switcher-1');
+const selectValueChairs = document.querySelector('#select-1');
+const chairsValue = document.querySelector('#prices-card__chairs');
 
-switchValue1.addEventListener('change', () => {
-  if (switchValue1.checked) {
-    value = 300;    
-  } else {
-    value = 450;    
+switchValueChairs.addEventListener('change', () => {
+  const {cloth_back, leather_back, leather, cloth} = value_chairs
+  let value;
+  switch (selectValueChairs.selectedIndex) {
+    case 0:      
+      value = switchValueChairs.checked ? cloth_back : leather_back;
+      break;
+    case 1:
+      value = switchValueChairs.checked ? cloth : leather;
+      break;  
   }
-  chairsValue1.textContent = value;
+  chairsValue.textContent = value;
 })
 
-const switchValue2 = document.querySelector('#switcher-2');
-const chairsValue2 = document.querySelector('#prices-card__sofa');
-
-switchValue2.addEventListener('change', () => {
-  if (switchValue2.checked) {
-    value = 2100;    
-  } else {
-    value = 2600;    
+selectValueChairs.addEventListener('change', (e) => {
+  const {cloth_back, leather_back, cloth, leather} = value_chairs
+  let value;
+  switch (e.target.selectedIndex) {
+    case 0:      
+      value = switchValueChairs.checked ? cloth_back : leather_back;
+      break;
+    case 1:
+      value = switchValueChairs.checked ? cloth : leather;  
+      break;
   }
-  chairsValue2.textContent = value;
+  chairsValue.textContent = value;
 })
 
-const switchValue3 = document.querySelector('#switcher-3');
-const chairsValue3 = document.querySelector('#prices-card__armchairs');
+// Prices sofa selector
 
-switchValue3.addEventListener('change', () => {
-  if (switchValue3.checked) {
-    value = 1000;    
-  } else {
-    value = 1500;    
+const value_sofa = {
+  leather_2: '2600',
+  cloth_2: '2100',
+  leather_3: '3300',
+  cloth_3: '2700',
+  leather_2x: '4100',
+  cloth_2x: '3300',
+  leather_3x: '5750',
+  cloth_3x: '4500'
+};
+
+const switchValueSofa = document.querySelector('#switcher-2');
+const selectValueSofa = document.querySelector('#select-2');
+const sofaValue = document.querySelector('#prices-card__sofa');
+
+switchValueSofa.addEventListener('change', () => {
+  const {
+      leather_2, 
+      cloth_2,
+      leather_3, 
+      cloth_3,
+      leather_2x, 
+      cloth_2x,
+      leather_3x, 
+      cloth_3x
+  } = value_sofa
+  let value;
+  switch (selectValueSofa.selectedIndex) {
+    case 0:      
+      value = switchValueSofa.checked ? cloth_2 : leather_2;
+      break;
+    case 1:
+      value = switchValueSofa.checked ? cloth_3 : leather_3;
+      break; 
+    case 2:
+      value = switchValueSofa.checked ? cloth_2x : leather_2x;
+      break; 
+    case 3:
+      value = switchValueSofa.checked ? cloth_3x : leather_3x;
+      break;  
   }
-  chairsValue3.textContent = value;
+  sofaValue.textContent = value;
+})
+
+selectValueSofa.addEventListener('change', (e) => {
+  const {
+    leather_2, 
+    cloth_2,
+    leather_3, 
+    cloth_3,
+    leather_2x, 
+    cloth_2x,
+    leather_3x, 
+    cloth_3x
+} = value_sofa
+  let value;
+  switch (e.target.selectedIndex) {
+    case 0:      
+      value = switchValueSofa.checked ? cloth_2 : leather_2;
+      break;
+    case 1:
+      value = switchValueSofa.checked ? cloth_3 : leather_3;
+      break; 
+    case 2:
+      value = switchValueSofa.checked ? cloth_2x : leather_2x;
+      break; 
+    case 3:
+      value = switchValueSofa.checked ? cloth_3x : leather_3x;
+      break;
+  }
+  sofaValue.textContent = value;
+})
+
+// Prices armchairs selector
+
+const value_armchairs = {
+  leather_back: '1850',
+  cloth_back: '1250',
+  leather: '1500',
+  cloth: '1000'
+};
+const selectValueArmchairs = document.querySelector('#select-3');
+const switchValueArmchairs = document.querySelector('#switcher-3');
+const armchairsValue = document.querySelector('#prices-card__armchairs');
+
+switchValueArmchairs.addEventListener('change', () => {
+  const {cloth_back, leather_back, leather, cloth} = value_armchairs
+  let value;
+  switch (selectValueArmchairs.selectedIndex) {
+    case 0:      
+      value = switchValueArmchairs.checked ? cloth_back : leather_back;
+      break;
+    case 1:
+      value = switchValueArmchairs.checked ? cloth : leather;
+      break;  
+  }
+  armchairsValue.textContent = value;
+})
+
+selectValueArmchairs.addEventListener('change', (e) => {
+  const {cloth_back, leather_back, cloth, leather} = value_armchairs;
+  let value;
+  switch (e.target.selectedIndex) {
+    case 0:      
+      value = switchValueArmchairs.checked ? cloth_back : leather_back;
+      break;
+    case 1:
+      value = switchValueArmchairs.checked ? cloth : leather;  
+      break;
+  }
+  armchairsValue.textContent = value;
 })
 
 $(document).ready(function() { 

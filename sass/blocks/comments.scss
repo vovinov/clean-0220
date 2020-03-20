@@ -1,7 +1,5 @@
 
-.comments {
-    margin-bottom: 121px;
-}
+.comments { margin-bottom: 121px; }
 
 .comments__item {
     display: flex;
@@ -21,12 +19,6 @@
     font-size: 12px;
 }
 
-.comments-star__list {
-    display: flex;
-    justify-content: center;
-}
-
-#star {
-    stroke: none;
-    fill: #FFDD55;
+@media (max-width: 768px) {
+    .comments { margin-bottom: 15px; }
 }
