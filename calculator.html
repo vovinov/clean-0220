@@ -11,35 +11,43 @@
     <section>
         <div class="container my-5">
             <div class="row">
-                <div class="col-md-6">                    
-                    <h2 class="calculator__heading">КАЛЬКУЛЯТОР</h2>                   
-                    <div class="calculator__row">
-                        <div class="calculator__option">
-                            <span class="ml-3">Выберите тип уборки</span>  
-                        </div>
-                        <select class="custom-select calculator__select">
-                            <option selected class="calculator__select--text">Генеральная уборка</option>
-                            <option value="1" class="calculator__select--text"></option>
-                            <option value="2" class="calculator__select--text"></option>
-                            <option value="3" class="calculator__select--text"></option>
-                        </select>                        
-                    </div> 
+                <form class="col-md-6" id="form_calc">
+                    <h2 class="calculator__heading">КАЛЬКУЛЯТОР</h2>
                     <div class="calculator__row">
                         <div class="calculator__option">
                             <span class="ml-3">Выберите услугу</span>  
                         </div>
-                        <select class="custom-select calculator__select">
-                            <option selected class="calculator__select--text">Уборка квартир</option>
-                            <option value="1" class="calculator__select--text"></option>
-                            <option value="2" class="calculator__select--text"></option>
-                            <option value="3" class="calculator__select--text"></option>
+                        <select id="service_calc" class="custom-select calculator__select">
+                            <option selected id="service_apart" value="Уборка квартир" class="calculator__select--text">Уборка квартир</option>
+                            <option id="service_house" value="Уборка коттеджей" class="calculator__select--text">Уборка коттеджей</option>
+                            <option id="service_office" value="Уборка офисов" class="calculator__select--text">Уборка офисов</option>
                         </select>                        
-                    </div> 
+                    </div>
                     <div class="calculator__row">
                         <div class="calculator__option">
-                            <span class="ml-3">Площадь помещения</span>  
+                            <span class="ml-3">Выберите тип уборки</span>
                         </div>
-                        <input class="calculator__input" type="text" placeholder="Введите метраж">                        
+                        <select id="type_calc" class="custom-select calculator__select">
+                            <option selected value="Экспресс уборка" data-price="" class="calculator__select--text">Экспресс уборка</option>
+                            <option value="Генеральная уборка" data-price="" class="calculator__select--text">Генеральная уборка</option>
+                            <option value="VIP уборка" data-price="" class="calculator__select--text">VIP уборка</option>
+                            <option id="after_repair" value="После ремонта" data-price="" class="calculator__select--text">После ремонта</option>
+                        </select>
+                    </div>
+                    <div class="calculator__row select__hidden" id="after_repair_select">
+                        <div class="calculator__option">
+                            <span class="ml-3">Условия обслуживани</span>
+                        </div>
+                        <select id="_calc" class="custom-select calculator__select">
+                            <option selected value="Экспресс уборка" id="after_repair_with" class="calculator__select--text">С мебелью</option>
+                            <option value="Генеральная уборка" id="after_repair_without" class="calculator__select--text">Без мебели</option>
+                        </select>
+                    </div>
+                    <div class="calculator__row">
+                        <div class="calculator__option">
+                            <span class="ml-3">Площадь помещения, м²</span>
+                        </div>
+                        <input class="calculator__input"  value="50" id="meters_calc" type="text" placeholder="Введите метраж">
                     </div> 
                     <h2 class="calculator__heading">ДОПОЛНИТЕЛЬНО</h2> 
                     <ul class="calculator__list row">
@@ -187,7 +195,7 @@
                             </div>
                         </li>  
                     </ul>  
-                </div> <!-- end col-6 -->
+                </form> <!-- end col-6 -->
                 <li class="col-md-6 d-flex justify-content-center flex-wrap align-content-start">
                     <div class="calculator-all">
                         <h3 class="mb-3 calculator__heading text-center">ИТОГ</h3>
@@ -206,48 +214,49 @@
                         </ul>
                         <div class="d-flex calculator-all__row my-5 justify-content-between">
                             <h3 class="mb-3">ВСЕГО</h3>
-                            <span class="calculator-all__price">???</span> 
+                            <span id="sum_price" class="calculator-all__price">???</span>
                         </div>
                         <button type="submit" class="btn calculator-all__btn">ОФОРМИТЬ ЗАКАЗ</button>
                     </div>
                     <ul class="calculator-stages">
                         <li class="row justify-content-between align-items-center mb-4">
-                            <div class="col-md-4 align-self-center">
+                            <div class="col-3 align-self-center">
                                 <div class="calculator-stages__block">
                                     <span class="calculator-stages__number">1</span>
                                 </div>                            
                             </div>                            
-                            <p class="col-md-8 calculator-stages__text col-md-6">Связываетесь удобным для Вас способом</p>
+                            <p class="col-9 calculator-stages__text">Связываетесь удобным для Вас способом</p>
                         </li>
                         <li class="row justify-content-between align-items-center mb-4">
-                            <div class="col-md-4 align-self-center">
+                            <div class="col-3 align-self-center">
                                 <div class="calculator-stages__block">
                                     <span class="calculator-stages__number">2</span>
                                 </div>                            
                             </div>                            
-                            <p class="col-md-8 calculator-stages__text col-md-6">Ориентировочную стоимость вы можете посчитать с помощью калькулятора на сайте. Операторы call-центра всегда дают точную стоимость услуг, никаких доплат на месте</p>
+                            <p class="col-9 calculator-stages__text">Ориентировочную стоимость вы можете посчитать с помощью калькулятора на сайте. Операторы call-центра всегда дают точную стоимость услуг, никаких доплат на месте</p>
                         </li>
                         <li class="row justify-content-between align-items-center mb-4">
-                            <div class="col-md-4 align-self-center">
+                            <div class="col-3 align-self-center">
                                 <div class="calculator-stages__block calculator-stages__block--20">
                                     <span class="calculator-stages__number">3</span>
                                 </div>                            
                             </div>                            
-                            <p class="col-md-8 calculator-stages__text col-md-6">В назначенные дату и время на объект приезжает бригада специалистов</p>
+                            <p class="col-9 calculator-stages__text">В назначенные дату и время на объект приезжает бригада специалистов</p>
                         </li>
                         <li class="row justify-content-between align-items-center">
-                            <div class="col-md-4 align-self-center">
+                            <div class="col-3 align-self-center">
                                 <div class="calculator-stages__block calculator-stages__block--0">
                                     <span class="calculator-stages__number">4</span>
                                 </div>                            
                             </div>                            
-                            <p class="col-md-8 calculator-stages__text col-md-6">Приёмка работ и оплата</p>
+                            <p class="col-9 calculator-stages__text">Приёмка работ и оплата</p>
                         </li>
                     </ul>
                 </div>  <!-- end col-6 -->
             </div> <!-- end row -->
         </div>
     </section>
-    <script src="./js/all.min.js"></script> 
+    <script src="jquery.js"></script>
+    <script src="calc.js"></script>
 </body>
 </html>
