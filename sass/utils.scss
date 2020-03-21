@@ -4,13 +4,14 @@
     text-align: center;
 }
 
-.section__row {
-    margin-bottom: 100px;
+.section__subheading {
+    font-size: 20px;
+    font-weight: 700;
 }
 
-.section__bubble {
-    margin-bottom: 50px;
-}
+.section__row { margin-bottom: 100px; }
+
+.section__bubble { margin-bottom: 50px; }
 
 .section__icon {
     position: relative;

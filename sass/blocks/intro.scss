@@ -1,7 +1,7 @@
 .intro {
     background-image: url('../../img/main.jpg');
     background-size: cover;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     clip-path: polygon(100% 0, 0 0, 0 95%, 40% 95%, 50% 100%, 60% 95%, 100% 95%);
 }
 
@@ -19,7 +19,6 @@
     @media (max-width: 1200px) {
         color: $primary;
     }
-
 }
 
 .intro__heading {
@@ -69,11 +68,24 @@
 
 @media screen and (max-width: 576px) {
 
-    .heading-container { margin-top: 20px; } 
+    .intro {
+        margin-bottom: 0;
+        padding-bottom: 20px;
+    }
+
+    .heading-container {
+        text-align: center; 
+        margin-top: 20px; 
+    }
+
+    .subheading-container {
+        text-align: center;
+    }
     
     .intro__btn {
         margin-top: 25px;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
+        display: block;
     }
 
     .header__img {
