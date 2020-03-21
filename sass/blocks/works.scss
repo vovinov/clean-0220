@@ -6,11 +6,30 @@
     font-weight: 500;
 }
 
-.works__img {    
-    height: 650px;
+.works__img {
     overflow: hidden;
+    margin-bottom: 20px;
+    max-width: 100%;
+
+    .handle {
+        background: rgba(16,152,247,.5) !important;
+        &:after {
+            background-color: #1098F7 !important;
+            border-color: #1098F7 !important;
+            box-shadow: 0 2px 6px rgba(0,0,0,.3), inset 0 2px 0 rgba(255,255,255,.5), inset 0 60px 50px -30px #1098F7 !important;
+        }
+    }
+    &--before,
+    &--after {
+        height: 200px;
+    }
 }
 
-.slider__img {
-    cursor: pointer;
+@media screen and (max-width: 576px) {
+    .works__img {
+        &--before,
+        &--after {
+            height: 300px;
+        }
+    }
 }

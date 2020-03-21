@@ -7,17 +7,17 @@
     }
 
     30% {
-        box-shadow: 0 0 50px rgba($primary, 1);
+        box-shadow: 0 0 100px rgba($primary, 1);
         transform: scale(1.1);
     }
 
     60% {
-        box-shadow: 0 0 100px rgba($primary, 1);
+        box-shadow: 0 0 200px rgba($primary, 1);
         transform: scale(1);
     }
 
     90% {
-        box-shadow: 0 0 150px rgba($primary, 1);
+        box-shadow: 0 0 100px rgba($primary, 1);
         transform: scale(1.1);
     }
 }

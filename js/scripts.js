@@ -2,7 +2,9 @@
  
 // Before - After
 
-$('.ba-slider').beforeAfter();
+$('.ba-slider').each(function(){
+  $(this).beforeAfter();
+});
 
 // About selector
 
@@ -29,103 +31,401 @@ const changeActiveClass = (node) => {
 
 // Prices chairs selector
 
+const value_chairs = {
+  leather_back: '450',
+  cloth_back: '300',
+  leather: '300',
+  cloth: '200'
+};
 
-let value = 1000;
-const switchValue1 = document.querySelector('#switcher-1');
-const selectValue1 = document.querySelector('#chairs-select');
-const chairsValue1 = document.querySelector('#prices-card__chairs');
+const switchValueChairs = document.getElementById('switcher-1');
+console.log(switchValueChairs);
+const selectValueChairs = document.getElementById('select-1');
+const chairsValue = document.getElementById('prices-card__chairs');
+const chairsImg = document.querySelector('.prices-card__img--chair');
 
-switchValue1.addEventListener('change', () => {
-  if (switchValue1.checked) {
-    value += 1000;    
-  } else {
-    value -= 1000;    
+
+switchValueChairs.addEventListener('change', () => {
+  const {cloth_back, leather_back, leather, cloth} = value_chairs;
+  let value;
+  switch (selectValueChairs.selectedIndex) {
+    case 0:      
+      value = switchValueChairs.checked ? cloth_back : leather_back;
+      chairsImg.src = switchValueChairs.checked ? "/img/picture_chairBack_cloth.jpg" : "/img/picture_chairBack_leather.jpg";
+      break;
+    case 1:
+      value = switchValueChairs.checked ? cloth : leather;
+      chairsImg.src = switchValueChairs.checked ? "/img/picture_chair_cloth.jpg" : "/img/picture_chair_leather.jpg"; 
+      break;  
   }
-  chairsValue1.textContent = value;
+  chairsValue.textContent = value;
 })
 
-selectValue1.addEventListener('change', (e) => {
-  let selectedValue = 0;
+selectValueChairs.addEventListener('change', (e) => {
+  const {cloth_back, leather_back, cloth, leather} = value_chairs
+  let value;
   switch (e.target.selectedIndex) {
-    case 0: 
-      selectedValue = 200;
+    case 0:      
+      value = switchValueChairs.checked ? cloth_back : leather_back;
+      chairsImg.src = switchValueChairs.checked ? "/img/picture_chairBack_cloth.jpg" : "/img/picture_chairBack_leather.jpg";
       break;
-    case 1: 
-      selectedValue = 500;
+    case 1:
+      value = switchValueChairs.checked ? cloth : leather;  
+      chairsImg.src = switchValueChairs.checked ? "/img/picture_chair_cloth.jpg" : "/img/picture_chair_leather.jpg"; 
       break;
   }
-  chairsValue1.textContent = value + selectedValue;
+  chairsValue.textContent = value;
 })
 
-const switchValue2 = document.querySelector('#switcher-2');
-const selectValue2 = document.querySelector('#sofa-select');
-const chairsValue2 = document.querySelector('#prices-card__sofa');
+// Prices sofa selector
 
-switchValue2.addEventListener('change', () => {
-  if (switchValue2.checked) {
-    value += 1000;    
-  } else {
-    value -= 1000;    
+const value_sofa = {
+  leather_2: '2600',
+  cloth_2: '2100',
+  leather_3: '3300',
+  cloth_3: '2700',
+  leather_2x: '4100',
+  cloth_2x: '3300',
+  leather_3x: '5750',
+  cloth_3x: '4500'
+};
+
+const switchValueSofa = document.querySelector('#switcher-2');
+const selectValueSofa = document.querySelector('#select-2');
+const sofaValue = document.querySelector('#prices-card__sofa');
+const sofaImg = document.querySelector('.prices-card__img--sofa');
+
+switchValueSofa.addEventListener('change', () => {
+  const {
+      leather_2, 
+      cloth_2,
+      leather_3, 
+      cloth_3,
+      leather_2x, 
+      cloth_2x,
+      leather_3x, 
+      cloth_3x
+  } = value_sofa
+  let value;
+  switch (selectValueSofa.selectedIndex) {
+    case 0:      
+      value = switchValueSofa.checked ? cloth_2 : leather_2;
+      sofaImg.src = switchValueSofa.checked ? "/img/picture_sofa2_cloth.jpeg" : "/img/picture_sofa2_leather.jpg"; 
+      break;
+    case 1:
+      value = switchValueSofa.checked ? cloth_3 : leather_3;
+      sofaImg.src = switchValueSofa.checked ? "/img/picture_sofa3_cloth.jpeg" : "/img/picture_sofa3_leather.jpg"; 
+      break; 
+    case 2:
+      value = switchValueSofa.checked ? cloth_2x : leather_2x;
+      sofaImg.src = switchValueSofa.checked ? "/img/picture_sofa2x_cloth.jpg" : "/img/picture_sofa2x_leather.jpg"; 
+      break; 
+    case 3:
+      value = switchValueSofa.checked ? cloth_3x : leather_3x;
+      sofaImg.src = switchValueSofa.checked ? "/img/picture_sofa3x_cloth.jpg" : "/img/picture_sofa2x_leather.jpg"; 
+      break;  
   }
-  chairsValue2.textContent = value;
+  sofaValue.textContent = value;
 })
 
-selectValue2.addEventListener('change', (e) => {
-  let selectedValue = 0;
+selectValueSofa.addEventListener('change', (e) => {
+  const {
+    leather_2, 
+    cloth_2,
+    leather_3, 
+    cloth_3,
+    leather_2x, 
+    cloth_2x,
+    leather_3x, 
+    cloth_3x
+} = value_sofa
+  let value;
   switch (e.target.selectedIndex) {
-    case 0: 
-      selectedValue = 200;
+    case 0:      
+      value = switchValueSofa.checked ? cloth_2 : leather_2;
+      sofaImg.src = switchValueSofa.checked ? "/img/picture_sofa2_cloth.jpeg" : "/img/picture_sofa2_leather.jpg"; 
       break;
-    case 1: 
-      selectedValue = 500;
+    case 1:
+      value = switchValueSofa.checked ? cloth_3 : leather_3;
+      sofaImg.src = switchValueSofa.checked ? "/img/picture_sofa3_cloth.jpeg" : "/img/picture_sofa3_leather.jpg"; 
+
+      break; 
+    case 2:
+      value = switchValueSofa.checked ? cloth_2x : leather_2x;
+      sofaImg.src = switchValueSofa.checked ? "/img/picture_sofa2x_cloth.jpg" : "/img/picture_sofa2x_leather.jpg"; 
+
+      break; 
+    case 3:
+      value = switchValueSofa.checked ? cloth_3x : leather_3x;
+      sofaImg.src = switchValueSofa.checked ? "/img/picture_sofa3x_cloth.jpg" : "/img/picture_sofa2x_leather.jpg"; 
       break;
-    case 2: 
-      selectedValue = 700;
-    break;
-    case 3: 
-      selectedValue = 1000;
-    break;
   }
-  chairsValue2.textContent = value + selectedValue;
+  sofaValue.textContent = value;
 })
 
-const switchValue3 = document.querySelector('#switcher-3');
-const selectValue3 = document.querySelector('#armchairs-select');
-const chairsValue3 = document.querySelector('#prices-card__armchairs');
+// Prices armchairs selector
 
-switchValue3.addEventListener('change', () => {
-  if (switchValue3.checked) {
-    value += 1000;    
-  } else {
-    value -= 1000;    
+const value_armchairs = {
+  leather_back: '1850',
+  cloth_back: '1250',
+  leather: '1500',
+  cloth: '1000'
+};
+
+const selectValueArmchairs = document.querySelector('#select-3');
+const switchValueArmchairs = document.querySelector('#switcher-3');
+const armchairsValue = document.querySelector('#prices-card__armchairs');
+const armchairsImg = document.querySelector('.prices-card__img--armchair');
+
+switchValueArmchairs.addEventListener('change', () => {
+  const {cloth_back, leather_back, leather, cloth} = value_armchairs
+  let value;
+  switch (selectValueArmchairs.selectedIndex) {
+    case 0:      
+      value = switchValueArmchairs.checked ? cloth_back : leather_back;
+      armchairsImg.src = switchValueArmchairs.checked ? "/img/picture_armchair_cloth.jpeg" : "/img/picture_armchair_leather.jpeg"; 
+      break;
+    case 1:
+      value = switchValueArmchairs.checked ? cloth : leather;
+      armchairsImg.src = switchValueArmchairs.checked ? "/img/picture_armchair_cloth.jpeg" : "/img/picture_armchair_leather.jpeg"; 
+      console.log(armchairsImg.src);
+      break;  
   }
-  chairsValue3.textContent = value;
+  armchairsValue.textContent = value;
 })
 
-selectValue3.addEventListener('change', (e) => {
-  let selectedValue = 0;
+selectValueArmchairs.addEventListener('change', (e) => {
+  const {cloth_back, leather_back, cloth, leather} = value_armchairs;
+  let value;
   switch (e.target.selectedIndex) {
-    case 0: 
-      selectedValue = 200;
+    case 0:      
+      value = switchValueArmchairs.checked ? cloth_back : leather_back;
       break;
-    case 1: 
-      selectedValue = 500;
+    case 1:
+      value = switchValueArmchairs.checked ? cloth : leather;  
       break;
   }
-  chairsValue3.textContent = value + selectedValue;
+  armchairsValue.textContent = value;
 })
 
-// Slider - works
+// puff
+
+const value_puff = {
+  leather_40: '650',
+  cloth_40: '400',
+  leather_80: '1200',
+  cloth_80: '800',
+};
+
+const selectValuePuff = document.querySelector('#select-5');
+const switchValuePuff = document.querySelector('#switcher-5');
+const puffValue = document.querySelector('#prices-card__puff');
+const puffImg = document.querySelector('.prices-card__img--puff');
+
+switchValuePuff.addEventListener('change', () => {
+  const {leather_40, cloth_40, leather_80, cloth_80} = value_puff;
+  let value;
+  switch (selectValuePuff.selectedIndex) {
+    case 0:
+      value = switchValuePuff.checked ? cloth_40 : leather_40;
+      puffImg.src = switchValuePuff.checked ? "/img/puff_cloth.jpg" : "/img/puff_leather.jpg";
+      break;
+    case 1:
+      value = switchValuePuff.checked ? cloth_80 : leather_80;
+      puffImg.src = switchValuePuff.checked ? "/img/puff_cloth.jpg" : "/img/puff_leather.jpg";
+      break;
+  }
+  puffValue.textContent = value;
+})
+
+selectValuePuff.addEventListener('change', (e) => {
+  const {leather_40, cloth_40, leather_80, cloth_80} = value_puff;
+  let value;
+  switch (e.target.selectedIndex) {
+    case 0:
+      value = switchValuePuff.checked ? cloth_40 : leather_40;
+      break;
+    case 1:
+      value = switchValuePuff.checked ? cloth_80 : leather_80;
+      break;
+  }
+  puffValue.textContent = value;
+})
+
+// office
+
+const value_office = {
+  office_armchairs_leather: '500',
+  office_armchairs_cloth: '350',
+  office_chairs_leather: '200',
+  office_chairs_cloth: '150',
+  office_kingChairs_leather: '800',
+  office_kingChairs_cloth: '650',
+};
+
+const selectValueOffice = document.querySelector('#select-6');
+const switchValueOffice = document.querySelector('#switcher-6');
+const officeValue = document.querySelector('#prices-card__office');
+const officeImg = document.querySelector('.prices-card__img--office');
+
+switchValueOffice.addEventListener('change', () => {
+  const {office_armchairs_leather,
+    office_armchairs_cloth,
+    office_chairs_leather,
+    office_chairs_cloth,
+    office_kingChairs_leather,
+    office_kingChairs_cloth } = value_office;
+  let value;
+  switch (selectValueOffice.selectedIndex) {
+    case 0:
+      value = switchValueOffice.checked ? office_armchairs_cloth : office_armchairs_leather;
+      officeImg.src = switchValueOffice.checked ? "/img/picture_chairOffice_cloth.jpg" : "/img/picture_chairOffice_leather.jpg";
+      break;
+    case 1:
+      value = switchValueOffice.checked ? office_chairs_cloth : office_chairs_leather;
+      officeImg.src = switchValueOffice.checked ? "/img/picture_office_cloth.jpg" : "/img/picture_office_leather.jpg";
+      break;
+    case 2:
+      value = switchValueOffice.checked ? office_kingChairs_cloth : office_kingChairs_leather;
+      officeImg.src = switchValueOffice.checked ? "/img/picture_kingChairs_cloth.jpg" : "/img/picture_kingChairs_leather.jpg";
+      break;
+  }
+  officeValue.textContent = value;
+})
+
+selectValueOffice.addEventListener('change', (e) => {
+  const {office_armchairs_leather,
+    office_armchairs_cloth,
+    office_chairs_leather,
+    office_chairs_cloth,
+    office_kingChairs_leather,
+    office_kingChairs_cloth } = value_office;
+  let value;
+  switch (e.target.selectedIndex) {
+    case 0:
+      value = switchValueOffice.checked ? office_armchairs_cloth : office_armchairs_leather;
+      officeImg.src = switchValueOffice.checked ? "/img/picture_chairOffice_cloth.jpg" : "/img/picture_chairOffice_leather.jpg";
+      break;
+    case 1:
+      value = switchValueOffice.checked ? office_chairs_cloth : office_chairs_leather;
+      officeImg.src = switchValueOffice.checked ? "/img/picture_office_cloth.jpg" : "/img/picture_office_leather.jpg";
+      break;
+    case 2:
+      value = switchValueOffice.checked ? office_kingChairs_cloth : office_kingChairs_leather;
+      officeImg.src = switchValueOffice.checked ? "/img/picture_kingChairs_cloth.jpg" : "/img/picture_kingChairs_leather.jpg";
+      break;
+  }
+  officeValue.textContent = value;
+})
+
+// Prices matrass selector
+
+const value_matrass = {
+  sm_900_one: '1350',
+  sm_900_full: '1600',
+  sm_1200_one: '1800',
+  sm_1200_full: '2200',
+  md_1400_one: '2100',
+  md_1400_full: '2500',
+  md_1600_one: '2400',
+  md_1600_full: '2800',
+  md_1800_one: '2700',
+  md_1800_full: '3200'
+};
+
+const selectValueMatras = document.querySelector('#select-4');
+const switchValueMatras = document.querySelector('#switcher-4');
+const matrasValue = document.querySelector('#prices-card__matras');
+const matrasImg = document.querySelector('.prices-card__img--matras');
+
+const {sm_900_one, sm_900_full, sm_1200_one, sm_1200_full, md_1400_one, md_1400_full, md_1600_one, md_1600_full, md_1800_one, md_1800_full} = value_matrass;
+
+switchValueMatras.addEventListener('change', () => {
+  let value;
+  switch (selectValueMatras.selectedIndex) {
+    case 0:      
+      value = switchValueMatras.checked ? sm_900_full : s_900_one;
+      matrasImg.src = switchValueMatras.checked ? "/img/picture_matrass_sm.jpg" :  "/img/picture_matrass_sm.jpg"
+      break;
+    case 1:
+      value = switchValueMatras.checked ? sm_1200_full : s_1200_one;
+      matrasImg.src = switchValueMatras.checked ? "/img/picture_matrass_sm.jpg" :  "/img/picture_matrass_sm.jpg"
+      break; 
+    case 2:
+      value = switchValueMatras.checked ? md_1400_full : md_1400_one;
+      matrasImg.src = switchValueMatras.checked ? "/img/picture_matrass_lg.jpg" :  "/img/picture_matrass_lg.jpg"
+      break; 
+    case 3:
+      value = switchValueMatras.checked ? md_1600_full : md_1600_one;
+      matrasImg.src = switchValueMatras.checked ? "/img/picture_matrass_lg.jpg" :  "/img/picture_matrass_lg.jpg"
+      break; 
+    case 4:
+      value = switchValueMatras.checked ? md_1800_full : md_1800_one;
+      matrasImg.src = switchValueMatras.checked ? "/img/picture_matrass_lg.jpg" :  "/img/picture_matrass_lg.jpg"
+      break;  
+  }
+  matrasValue.textContent = value;
+})
+
+selectValueMatras.addEventListener('change', (e) => {
+  let value;
+  switch (e.target.selectedIndex) {
+    case 0:      
+      value = switchValueMatras.checked ? sm_900_full : s_900_one;
+      matrasImg.src = switchValueMatras.checked ? "/img/picture_matrass_sm.jpg" :  "/img/picture_matrass_sm.jpg"
+      break;
+    case 1:
+      value = switchValueMatras.checked ? sm_1200_full : s_1200_one;
+      matrasImg.src = switchValueMatras.checked ? "/img/picture_matrass_sm.jpg" :  "/img/picture_matrass_sm.jpg"
+      break; 
+    case 2:
+      value = switchValueMatras.checked ? md_1400_full : md_1400_one;
+      matrasImg.src = switchValueMatras.checked ? "/img/picture_matrass_lg.jpg" :  "/img/picture_matrass_lg.jpg"
+      break; 
+    case 3:
+      value = switchValueMatras.checked ? md_1600_full : md_1600_one;
+      matrasImg.src = switchValueMatras.checked ? "/img/picture_matrass_lg.jpg" :  "/img/picture_matrass_lg.jpg"
+      break; 
+    case 4:
+      value = switchValueMatras.checked ? md_1800_full : md_1800_one;
+      matrasImg.src = switchValueMatras.checked ? "/img/picture_matrass_lg.jpg" :  "/img/picture_matrass_lg.jpg"
+      break; 
+  }
+  matrasValue.textContent = value;
+})
 
 $(document).ready(function() { 
   
   // Slider - works
-  $('.slider-works').slick({
-    arrows: true,
-    infinite: true,  
-    slidesToShow: 3,
-    slidesToScroll: 1
-    // loop: true
+  $('.works-slider').slick({
+    dots: true,
+    slidesToShow: 2,
+    variableWidth: true,
+    centerMode: true,
+    autoplay: true
   });
+
+  const imgBefore = document.querySelector('.works__img--before');
+  const imgAfter = document.querySelector('.works__img--after');
+  const sliderItems = document.querySelectorAll('.works-slider__item');
+
+  sliderItems.forEach((item) => {
+    item.addEventListener('click', (e) => {
+      changeWorksImage(e.target.alt);
+    })
+  });
+
+  const changeWorksImage = (name) => {
+    imgBefore.src = `img/${name}-before.jpg`;
+    imgAfter.src = `img/${name}-after.jpg`;
+  }
+
+  // Comments - works
+  $('.comments__row').slick({
+    arrows: true,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 5000
+  })
 });
 

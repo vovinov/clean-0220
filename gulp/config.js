@@ -2,6 +2,8 @@ module.exports = [
     './gulp/tasks/sass',    
     './gulp/tasks/scripts', 
     './gulp/tasks/copy', 
+    './gulp/tasks/copy_php',
+    './gulp/tasks/copy_server',
     './gulp/tasks/allcss', 
     './gulp/tasks/clean', 
     './gulp/tasks/images', 
@@ -9,5 +11,5 @@ module.exports = [
     './gulp/tasks/html', 
     './gulp/tasks/allimg', 
     './gulp/tasks/serve', 
-    './gulp/tasks/changejs' 
+    './gulp/tasks/changejs',
 ];

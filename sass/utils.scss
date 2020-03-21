@@ -1,16 +1,21 @@
 .section__heading {
     font-size: 36px;
     font-weight: 700;
-    margin-top: 47px;
     text-align: center;
 }
 
-.section__row {
-    margin-bottom: 75px;
+.section__subheading {
+    font-size: 20px;
+    font-weight: 700;
 }
 
+.section__row { margin-bottom: 100px; }
+
+.section__bubble { margin-bottom: 50px; }
+
 .section__icon {
-    position: relative; 
+    position: relative;
+    margin-bottom: 4rem;
 
     &::before,
     &::after {
@@ -35,7 +40,30 @@
     width: 51px;
     height: 51px;
     fill: $primary;  
-    position: relative; 
+    position: relative;
+}
 
-    
+.section__btn {
+    background-color: $white;
+    color: $primary;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 3px solid $primary;
+    box-shadow: 5px 5px 15px rgba($primary, 0.3);
+
+    &:hover {
+        color: $white;
+        background-color: $primary;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .section__heading { margin-top: 20px; }
+
+    .section__row { margin: 10px 0; }
 }
