@@ -110,7 +110,7 @@ switchValueSofa.addEventListener('change', () => {
   switch (selectValueSofa.selectedIndex) {
     case 0:      
       value = switchValueSofa.checked ? cloth_2 : leather_2;
-      sofaImg.src = switchValueSofa.checked ? "/img/picture_sofa2_cloth.jpeg" : "/img/picture_sofa2_leather.jpg"; 
+      sofaImg.src = switchValueSofa.checked ? "/img/picture_sofa2_cloth.jpg" : "/img/picture_sofa2_leather.jpg"; 
       break;
     case 1:
       value = switchValueSofa.checked ? cloth_3 : leather_3;
@@ -122,7 +122,7 @@ switchValueSofa.addEventListener('change', () => {
       break; 
     case 3:
       value = switchValueSofa.checked ? cloth_3x : leather_3x;
-      sofaImg.src = switchValueSofa.checked ? "/img/picture_sofa3x_cloth.jpg" : "/img/picture_sofa2x_leather.jpg"; 
+      sofaImg.src = switchValueSofa.checked ? "/img/picture_sofa3x_cloth.jpg" : "/img/picture_sofa3x_leather.jpg"; 
       break;  
   }
   sofaValue.textContent = value;
@@ -143,7 +143,7 @@ selectValueSofa.addEventListener('change', (e) => {
   switch (e.target.selectedIndex) {
     case 0:      
       value = switchValueSofa.checked ? cloth_2 : leather_2;
-      sofaImg.src = switchValueSofa.checked ? "/img/picture_sofa2_cloth.jpeg" : "/img/picture_sofa2_leather.jpg"; 
+      sofaImg.src = switchValueSofa.checked ? "/img/picture_sofa2_cloth.jpg" : "/img/picture_sofa2_leather.jpg"; 
       break;
     case 1:
       value = switchValueSofa.checked ? cloth_3 : leather_3;
@@ -157,7 +157,7 @@ selectValueSofa.addEventListener('change', (e) => {
       break; 
     case 3:
       value = switchValueSofa.checked ? cloth_3x : leather_3x;
-      sofaImg.src = switchValueSofa.checked ? "/img/picture_sofa3x_cloth.jpg" : "/img/picture_sofa2x_leather.jpg"; 
+      sofaImg.src = switchValueSofa.checked ? "/img/picture_sofa3x_cloth.jpg" : "/img/picture_sofa3x_leather.jpg"; 
       break;
   }
   sofaValue.textContent = value;
@@ -166,45 +166,20 @@ selectValueSofa.addEventListener('change', (e) => {
 // Prices armchairs selector
 
 const value_armchairs = {
-  leather_back: '1850',
-  cloth_back: '1250',
   leather: '1500',
   cloth: '1000'
 };
 
-const selectValueArmchairs = document.querySelector('#select-3');
 const switchValueArmchairs = document.querySelector('#switcher-3');
 const armchairsValue = document.querySelector('#prices-card__armchairs');
 const armchairsImg = document.querySelector('.prices-card__img--armchair');
 
-switchValueArmchairs.addEventListener('change', () => {
-  const {cloth_back, leather_back, leather, cloth} = value_armchairs
-  let value;
-  switch (selectValueArmchairs.selectedIndex) {
-    case 0:      
-      value = switchValueArmchairs.checked ? cloth_back : leather_back;
-      armchairsImg.src = switchValueArmchairs.checked ? "/img/picture_armchair_cloth.jpeg" : "/img/picture_armchair_leather.jpeg"; 
-      break;
-    case 1:
-      value = switchValueArmchairs.checked ? cloth : leather;
-      armchairsImg.src = switchValueArmchairs.checked ? "/img/picture_armchair_cloth.jpeg" : "/img/picture_armchair_leather.jpeg"; 
-      console.log(armchairsImg.src);
-      break;  
-  }
-  armchairsValue.textContent = value;
-})
+const {leather, cloth} = value_armchairs;
 
-selectValueArmchairs.addEventListener('change', (e) => {
-  const {cloth_back, leather_back, cloth, leather} = value_armchairs;
+switchValueArmchairs.addEventListener('change', () => {
   let value;
-  switch (e.target.selectedIndex) {
-    case 0:      
-      value = switchValueArmchairs.checked ? cloth_back : leather_back;
-      break;
-    case 1:
-      value = switchValueArmchairs.checked ? cloth : leather;  
-      break;
-  }
+  value = switchValueArmchairs.checked ? cloth_back : leather_back;
+  armchairsImg.src = switchValueArmchairs.checked ? "/img/picture_armchair_cloth.jpeg" : "/img/picture_armchair_leather.jpeg"; 
   armchairsValue.textContent = value;
 })
 

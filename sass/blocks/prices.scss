@@ -1,10 +1,12 @@
 .prices-card {
     padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    height: 440px;
     border: 3px solid $primary;
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba($black, 0.2);
-    margin-bottom: 20px;
-
+    margin: 0 auto 20px auto;
 }
 
 .prices-card__heading {
@@ -14,8 +16,7 @@
 }
 
 .prices-card__wrap {
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
 
     select {
         &:focus {

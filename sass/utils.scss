@@ -44,8 +44,6 @@
 }
 
 .section__btn {
-    background-color: $white;
-    color: $primary;
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
@@ -55,9 +53,36 @@
     border: 3px solid $primary;
     box-shadow: 5px 5px 15px rgba($primary, 0.3);
 
-    &:hover {
+    &--primary {
         color: $white;
         background-color: $primary;
+
+        &:hover {
+            background-color: $white;
+            color: $primary;
+        }
+    }
+
+    &--secondary {
+
+        background-color: $white;
+        color: $primary;
+
+        &:hover {
+            color: $white;
+            background-color: $primary;
+        }
+    }
+
+    &--main {
+
+        background-color: transparent;
+        color: $primary;
+
+        &:hover {
+            color: $white;
+            background-color: $primary;
+        }
     }
 }
 
