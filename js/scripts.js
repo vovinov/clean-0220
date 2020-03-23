@@ -39,7 +39,6 @@ const value_chairs = {
 };
 
 const switchValueChairs = document.getElementById('switcher-1');
-console.log(switchValueChairs);
 const selectValueChairs = document.getElementById('select-1');
 const chairsValue = document.getElementById('prices-card__chairs');
 const chairsImg = document.querySelector('.prices-card__img--chair');
@@ -178,7 +177,7 @@ const {leather, cloth} = value_armchairs;
 
 switchValueArmchairs.addEventListener('change', () => {
   let value;
-  value = switchValueArmchairs.checked ? cloth_back : leather_back;
+  value = switchValueArmchairs.checked ? cloth : leather;
   armchairsImg.src = switchValueArmchairs.checked ? "/img/picture_armchair_cloth.jpeg" : "/img/picture_armchair_leather.jpeg"; 
   armchairsValue.textContent = value;
 })
@@ -227,72 +226,6 @@ selectValuePuff.addEventListener('change', (e) => {
   puffValue.textContent = value;
 })
 
-// office
-
-const value_office = {
-  office_armchairs_leather: '500',
-  office_armchairs_cloth: '350',
-  office_chairs_leather: '200',
-  office_chairs_cloth: '150',
-  office_kingChairs_leather: '800',
-  office_kingChairs_cloth: '650',
-};
-
-const selectValueOffice = document.querySelector('#select-6');
-const switchValueOffice = document.querySelector('#switcher-6');
-const officeValue = document.querySelector('#prices-card__office');
-const officeImg = document.querySelector('.prices-card__img--office');
-
-switchValueOffice.addEventListener('change', () => {
-  const {office_armchairs_leather,
-    office_armchairs_cloth,
-    office_chairs_leather,
-    office_chairs_cloth,
-    office_kingChairs_leather,
-    office_kingChairs_cloth } = value_office;
-  let value;
-  switch (selectValueOffice.selectedIndex) {
-    case 0:
-      value = switchValueOffice.checked ? office_armchairs_cloth : office_armchairs_leather;
-      officeImg.src = switchValueOffice.checked ? "/img/picture_chairOffice_cloth.jpg" : "/img/picture_chairOffice_leather.jpg";
-      break;
-    case 1:
-      value = switchValueOffice.checked ? office_chairs_cloth : office_chairs_leather;
-      officeImg.src = switchValueOffice.checked ? "/img/picture_office_cloth.jpg" : "/img/picture_office_leather.jpg";
-      break;
-    case 2:
-      value = switchValueOffice.checked ? office_kingChairs_cloth : office_kingChairs_leather;
-      officeImg.src = switchValueOffice.checked ? "/img/picture_kingChairs_cloth.jpg" : "/img/picture_kingChairs_leather.jpg";
-      break;
-  }
-  officeValue.textContent = value;
-})
-
-selectValueOffice.addEventListener('change', (e) => {
-  const {office_armchairs_leather,
-    office_armchairs_cloth,
-    office_chairs_leather,
-    office_chairs_cloth,
-    office_kingChairs_leather,
-    office_kingChairs_cloth } = value_office;
-  let value;
-  switch (e.target.selectedIndex) {
-    case 0:
-      value = switchValueOffice.checked ? office_armchairs_cloth : office_armchairs_leather;
-      officeImg.src = switchValueOffice.checked ? "/img/picture_chairOffice_cloth.jpg" : "/img/picture_chairOffice_leather.jpg";
-      break;
-    case 1:
-      value = switchValueOffice.checked ? office_chairs_cloth : office_chairs_leather;
-      officeImg.src = switchValueOffice.checked ? "/img/picture_office_cloth.jpg" : "/img/picture_office_leather.jpg";
-      break;
-    case 2:
-      value = switchValueOffice.checked ? office_kingChairs_cloth : office_kingChairs_leather;
-      officeImg.src = switchValueOffice.checked ? "/img/picture_kingChairs_cloth.jpg" : "/img/picture_kingChairs_leather.jpg";
-      break;
-  }
-  officeValue.textContent = value;
-})
-
 // Prices matrass selector
 
 const value_matrass = {
@@ -319,11 +252,11 @@ switchValueMatras.addEventListener('change', () => {
   let value;
   switch (selectValueMatras.selectedIndex) {
     case 0:      
-      value = switchValueMatras.checked ? sm_900_full : s_900_one;
+      value = switchValueMatras.checked ? sm_900_full : sm_900_one;
       matrasImg.src = switchValueMatras.checked ? "/img/picture_matrass_sm.jpg" :  "/img/picture_matrass_sm.jpg"
       break;
     case 1:
-      value = switchValueMatras.checked ? sm_1200_full : s_1200_one;
+      value = switchValueMatras.checked ? sm_1200_full : sm_1200_one;
       matrasImg.src = switchValueMatras.checked ? "/img/picture_matrass_sm.jpg" :  "/img/picture_matrass_sm.jpg"
       break; 
     case 2:
@@ -346,11 +279,11 @@ selectValueMatras.addEventListener('change', (e) => {
   let value;
   switch (e.target.selectedIndex) {
     case 0:      
-      value = switchValueMatras.checked ? sm_900_full : s_900_one;
+      value = switchValueMatras.checked ? sm_900_full : sm_900_one;
       matrasImg.src = switchValueMatras.checked ? "/img/picture_matrass_sm.jpg" :  "/img/picture_matrass_sm.jpg"
       break;
     case 1:
-      value = switchValueMatras.checked ? sm_1200_full : s_1200_one;
+      value = switchValueMatras.checked ? sm_1200_full : sm_1200_one;
       matrasImg.src = switchValueMatras.checked ? "/img/picture_matrass_sm.jpg" :  "/img/picture_matrass_sm.jpg"
       break; 
     case 2:
