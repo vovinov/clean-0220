@@ -19,20 +19,18 @@
 .navigation__list {
     display: flex;
     justify-content: space-between;
-
     flex-wrap: wrap;
     padding: 5px 10px;
     margin-bottom: 15px;
 }
 
 .navigation__link {
-    color: $black;
+    color: $white;
     font-size: 16px;
     font-weight: 700;
 
     &:hover {
         text-decoration: none;
-        color: $primary;
     }
 }
 
