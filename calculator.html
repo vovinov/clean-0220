@@ -49,7 +49,12 @@
                         <div class="calculator__option">
                             <span class="ml-3">Площадь помещения, м²</span>
                         </div>
-                        <input class="calculator__input"  value="50" id="meters_calc" type="text" placeholder="Введите метраж">
+                        <select id="square_calc" class="custom-select calculator__select">
+                            <option selected value="до 50 м²" data-price="" class="calculator__select--text">до 50 м²</option>
+                            <option value="до 70 м²" data-price="" class="calculator__select--text">до 70 м²</option>
+                            <option value="до 90 м²" data-price="" class="calculator__select--text">до 90 м²</option>
+                            <option value="до 120 м²" data-price="" class="calculator__select--text">до 120 м²</option>
+                        </select>
                     </div> 
                     <h2 class="calculator__heading">ДОПОЛНИТЕЛЬНО</h2> 
                     <ul class="calculator__list row">
@@ -138,7 +143,7 @@
                                 <div class="calculator-card__title text-center">
                                     <span class="calculator-card__name">Помыть балкон</span>
                                 </div>
-                                <P class="calculator-card__price">????</P>
+                                <P class="calculator-card__price">300 руб</P>
                             </div>
                         </li>
                         <li class="col-lg-4 col-sm-6 calculator-item text-center">
@@ -199,45 +204,45 @@
                     </ul>  
                 </form> <!-- end col-6 -->
                 <li class="col-md-6 d-flex justify-content-center flex-wrap align-content-start">
-                    <div class="calculator-all">
+                    <div class="calculator-total">
                         <h3 class="mb-3 calculator__heading text-center">ИТОГ</h3>
-                        <ul class="calculator-all__list">
-                            <li class="d-flex calculator-all__row justify-content-between">
-                                <span class="calculator-all__title">Уборка генеральная</span> 
-                                <span class="calculator-all__price">4500</span> 
+                        <ul class="mb-5">
+                            <li class="calculator-total__row">
+                                <div>
+                                    <p class="calculator-total__heading">Уборка квартир</p>
+                                    <p class="calculator-total__subtitle">Экспресс-уборка</p> 
+                                    <p class="calculator-total__square">до 50 м²</p> 
+                                </div>
+                                <span class="calculator-total__price">2500 руб</span> 
                             </li>
                         </ul>
-                        <h3 class="mb-3 calculator-all__subheading">Дополнительные услуги</h3>
-                        <ul class="calculator-all__list calculator-all__list--bordered">
-                            <li class="d-flex calculator-all__row justify-content-between">
-                                <span class="calculator-all__title">???</span> 
-                                <span class="calculator-all__price">???</span> 
-                            </li>
+                        <h3 class="calculator-total__subheading">Дополнительные услуги</h3>
+                        <ul class="calculator-total__list calculator-total__list--bordered">
                         </ul>
-                        <div class="d-flex calculator-all__row my-5 justify-content-between">
+                        <div class="calculator-total__row my-5">
                             <h3 class="mb-3">ВСЕГО</h3>
-                            <span id="sum_price" class="calculator-all__price">???</span>
+                            <span id="sum_price" class="calculator-total__price">0</span>
                         </div>
-                        <button type="submit" class="btn calculator-all__btn">ОФОРМИТЬ ЗАКАЗ</button>
+                        <button type="submit" class="btn calculator-total__btn">ОФОРМИТЬ ЗАКАЗ</button>
                     </div>
                     <ul class="calculator-stages">
-                        <li class="row justify-content-between align-items-center mb-4">
-                            <div class="col-3 align-self-center">
+                        <li class="row justify-content-between align-items-center">
+                            <div class="col-3 justify-self-center">
                                 <div class="calculator-stages__block">
                                     <span class="calculator-stages__number">1</span>
                                 </div>                            
                             </div>                            
                             <p class="col-9 calculator-stages__text">Связываетесь удобным для Вас способом</p>
                         </li>
-                        <li class="row justify-content-between align-items-center mb-4">
+                        <li class="row justify-content-between align-items-center">
                             <div class="col-3 align-self-center">
                                 <div class="calculator-stages__block">
                                     <span class="calculator-stages__number">2</span>
                                 </div>                            
                             </div>                            
-                            <p class="col-9 calculator-stages__text">Ориентировочную стоимость вы можете посчитать с помощью калькулятора на сайте. Операторы call-центра всегда дают точную стоимость услуг, никаких доплат на месте</p>
+                            <p class="col-9 calculator-stages__text">Ориентировочную стоимость вы можете посчитать с помощью калькулятора на сайте</p>
                         </li>
-                        <li class="row justify-content-between align-items-center mb-4">
+                        <li class="row justify-content-between align-items-center">
                             <div class="col-3 align-self-center">
                                 <div class="calculator-stages__block calculator-stages__block--20">
                                     <span class="calculator-stages__number">3</span>
@@ -258,7 +263,13 @@
             </div> <!-- end row -->
         </div>
     </section>
-    <script src="jquery.js"></script>
-    <script src="calc.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/calc.js"></script>
 </body>
+<template id="calc__row">
+    <li class="calculator-total__row">
+        <span class="calculator-total__title"></span> 
+        <span class="calculator-total__price"></span> 
+    </li>
+</template>
 </html>
