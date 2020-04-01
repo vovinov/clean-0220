@@ -5,22 +5,6 @@
     clip-path: polygon(100% 0, 0 0, 0 95%, 40% 95%, 50% 100%, 60% 95%, 100% 95%);
 }
 
-.header__logo {
-    width: 145px;
-    height: 180px;
-}
-
-.header__phone {
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 33px;
-    color: $white;
-
-    @media (max-width: 1200px) {
-        color: $primary;
-    }
-}
-
 .intro__heading {
     font-size: 63px;
     font-weight: 700;
@@ -86,11 +70,6 @@
         margin-top: 25px;
         margin-bottom: 50px;
         display: block;
-    }
-
-    .header__img {
-        text-align: center;
-        margin-bottom: 15px;
     }
 
     .header__phone {

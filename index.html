@@ -11,41 +11,49 @@
     <link rel="stylesheet" href="/css/style.min.css">
 </head>
 <body>
-    <a class="calculator-button" href="calculator.html" target="blank">
-        <img src="./img/calc-button.svg" alt="Calculator_button" class="calculator-button__img">
+    <a class="calculator-button" href="/calculator/index.html" target="blank">
+        <img src="/img/calc-button.svg" alt="Calculator_button" class="calculator-button__img">
     </a>
     <section class="intro">
         <div class="container">
-            <div class="row justify-content-between pt-5">
-                <div class="col-12 col-sm-3 header__img">
-                    <img src="./img/logo.png" alt="Logo" class="header__logo">
-                </div>
-                <div class="col-12 col-sm-9 row">
-                    <p class="col-12 col-md-6 col-lg-6 text-right mt-2 header__phone">8-800-123-45-67</p>
-                    <ul class="col-12 col-md-6 col-lg-6 contacts">
-                        <li class="contacts__item mr-3">
-                            <a href="#" class="contacts__link">
-                                <i class="fab fa-whatsapp contacts__icon"></i>
-                            </a>
-                        </li>
-                        <li class="contacts__item mr-3">
-                            <a href="#" class="contacts__link">
-                                <i class="fab fa-telegram contacts__icon"></i>
-                            </a>
-                        </li>
-                        <li class="contacts__item mr-3">
-                            <a href="#" class="contacts__link">
-                                <i class="fab fa-viber contacts__icon"></i>
-                            </a>
-                        </li>
-                        <li class="contacts__item">
-                            <a href="#" class="contacts__link">
-                                <i class="fab fa-instagram contacts__icon"></i>
-                            </a>
-                        </li>
+            <nav class="navigation row">
+                <a href="/" class="navigation__img col-md-3 col-md-3">
+                    <img src="./img/logo.png" alt="Logo" class="navigation__logo">
+                </a>  
+                <div class="navigation__box col-md-9">
+                    <ul class="navigation__list">
+                        <a href="#services" class="section__btn section__btn--main navigation__link">УСЛУГИ</a>
+                        <a href="#works" class="section__btn section__btn--main navigation__link">РАБОТЫ</a>
+                        <a href="#comments" class="section__btn section__btn--main navigation__link">ОТЗЫВЫ</a>
+                        <a href="#contacts" class="section__btn section__btn--main navigation__link">КОНТАКТЫ</a>
                     </ul>
-                </div>
-            </div>
+                    <div class="navigation__box-contacts">
+                        <ul class="contacts">
+                            <li class="contacts__item mr-3">
+                                <a href="#" class="contacts__link">
+                                    <i class="fab fa-whatsapp contacts__icon"></i>
+                                </a>
+                            </li>
+                            <li class="contacts__item mr-3">
+                                <a href="#" class="contacts__link">
+                                    <i class="fab fa-telegram contacts__icon"></i>
+                                </a>
+                            </li>
+                            <li class="contacts__item mr-3">
+                                <a href="#" class="contacts__link">
+                                    <i class="fab fa-viber contacts__icon"></i>
+                                </a>
+                            </li>
+                            <li class="contacts__item">
+                                <a href="#" class="contacts__link">
+                                    <i class="fab fa-instagram contacts__icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="navigation__phone">8-800-123-45-67</p>
+                    </div>
+                </div>                   
+            </nav>              
             <div class="row heading-container">
                 <h1 class="col intro__heading">HARD CLEAN</h1>
             </div>
@@ -57,7 +65,7 @@
     </section>
     <main>
         <section class="container">
-            <div class="section__row">
+            <div class="section__row" id="services">
                 <h2 class="section__heading mb-5">НАШИ УСЛУГИ</h2>
                 <div class="row justify-content-center section__bubble">
                     <div class="section__icon">
@@ -401,7 +409,7 @@
             </div>
         </section> 
         <section class="container">
-            <div class="section__row">
+            <div class="section__row" id="works">
                 <h2 class="section__heading mb-5">НАШИ РАБОТЫ</h2>
                 <div class="row justify-content-center">
                     <div class="section__icon">
@@ -457,7 +465,7 @@
             </div>
         </section>    
         <section class="container comments">
-            <div class="section__row">
+            <div class="section__row" id="comments">
                 <h2 class="section__heading mb-5">ОТЗЫВЫ</h2>
                 <div class="row justify-content-center">
                     <div class="section__icon">
@@ -498,7 +506,7 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="row">
+            <div class="row" id="contacts">
                 <div class="col-md-4 footer__contacts">
                     <h3 class="footer__heading">Контакты</h3>
                     <h4 class="footer__subheading">ТЕЛЕФОН</h4>
