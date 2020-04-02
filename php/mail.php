@@ -7,17 +7,19 @@ $mail->CharSet = 'utf-8';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
+$time = $_POST['time'];
+$text = $_POST['text'];
 
-//mail->SMTPDebug = 3;                               // Enable verbose debug output
+//$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';  																							// Specify main and backup SMTP servers
+$mail->Host = 'smtp.timeweb.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'slavarik1@gmail.com'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = '9152883251Slava'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = 'info@hardclean.ru'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = 'info12345'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'tls';           // Enable TLS encryption, `ssl` also accepted
 $mail->SMTPAutoTLS = false;
-$mail->Port = 587; // TCP port to connect to / этот порт может отличаться у других провайдеров
+$mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
 $mail->SMTPOptions = array(
     'ssl' => array(
@@ -26,8 +28,8 @@ $mail->SMTPOptions = array(
     'allow_self_signed' => true )
     );
 
-$mail->setFrom('slavarik1@gmail.com'); // от кого будет уходить письмо?
-$mail->addAddress('lelab61244@sweatmail.com');     // Кому будет уходить письмо 
+$mail->setFrom('info@hardclean.ru'); // от кого будет уходить письмо?
+$mail->addAddress('info@hardclean.ru');     // Кому будет уходить письмо 
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -36,8 +38,10 @@ $mail->addAddress('lelab61244@sweatmail.com');     // Кому будет ухо
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' . $phone. '<br>Почта этого пользователя: ' . $email;
+$mail->Subject = 'Комментарий с сайта HARD CLEAN';
+$mail->Body    = '' . $name . ' оставил комментарий, его телефон ' . $phone . '<br>Почта этого пользователя: ' . $email . '<br>' .
+'Время звонка ' . $time . '<br>' .
+'Текст: ' . $text;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
