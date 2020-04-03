@@ -11,504 +11,941 @@
 </head>
 <body>
     <section class="price-clean">
-      <div class="container">  
-        <div class="price-clean-buttons row text-center">
-          <div class="col-md-4 price-clean-button">
-            <a href="#clean-room" class="btn section__btn section__btn--primary">УБОРКА КВАРТИР</a>
-          </div>
-          <div class="col-md-4 price-clean-button">
-            <a href="#clean-office" class="btn section__btn section__btn--primary">УБОРКА ОФИСОВ</a>
-          </div>
-          <div class="col-md-4 price-clean-button">
-            <a href="#dry-clean" class="btn section__btn section__btn--primary">ХИМЧИСТКА</a>
-          </div>
-        </div>          
-        <div class="row" id="clean-room">
+      <div class="container">
+        <ul class="navigation__list">
+          <a href="./index.html" class="section__btn section__btn--main navigation__link">ГЛАВНАЯ</a>
+          <a href="./index.html#services" class="section__btn section__btn--main navigation__link">УСЛУГИ</a>
+          <a href="./price-dry.html" class="section__btn section__btn--main navigation__link">ПРАЙС-ХИМЧИСТКА</a>
+          <a href="./index.html#works" class="section__btn section__btn--main navigation__link">РАБОТЫ</a>
+          <a href="./index.html#comments" class="section__btn section__btn--main navigation__link">ОТЗЫВЫ</a>
+          <a href="./index.html#contacts" class="section__btn section__btn--main navigation__link">КОНТАКТЫ</a>
+        </ul>
+        <div class="price-clean-buttons text-center">
+            <a href="#clean-room" class="price-clean-button">УБОРКА КВАРТИР</a>
+            <a href="#clean-house" class="price-clean-button">УБОРКА КОТТЕДЖЕЙ, ТАУНХАУСОВ И ДОМОВ</a>
+            <a href="#clean-office" class="price-clean-button">УБОРКА КВАРТИР ПОСЛЕ РЕМОНТА</a>
+            <a href="#clean-window" class="price-clean-button">МОЙКА ОКОН</a>
+        </div>
+        <div class="price-clean__wrapper">
+          <div class="row pb-2" id="clean-room">
             <h2 class="section__heading col">Уборка квартир</h2>
-        </div>
-        <table class="table table-bordered">
-            <tbody>
-              <tr>
-                <th scope="row">Условия обслуживания</th>
-                <td>1-ая квартира<br><span class="price-clean__text--small">(до 50 кв.м)</span></td>
-                <td>2-ая квартира<br><span class="price-clean__text--small">(до 70 кв.м)</span></td>
-                <td>3-ая квартира<br><span class="price-clean__text--small">(до 90 кв.м)</span></td>
-                <td>4-ая квартира<br><span class="price-clean__text--small">(до 120 кв.м)</span></td>
-                <td>более 4-х комнат</td>
-              </tr> 
-              <tr>
-                <th scope="row">Экспресс</th>
-                <td>2500</td>
-                <td>3000</td>
-                <td>3500</td>
-                <td>4000</td>
-                <td>от 75 руб. за кв.м</td>
-              </tr>
-              <tr>
-                <th scope="row">Генеральная</th>
-                <td>4000</td>
-                <td>5000</td>
-                <td>6500</td>
-                <td>7000</td>
-                <td>от 90 руб. за кв.м</td>
-              </tr>
-              <tr>
-                <th scope="row">VIP</th>
-                <td>13000</td>
-                <td>17000</td>
-                <td>21000</td>
-                <td>24000</td>
-                <td>от 160 руб. за кв.м</td>
-              </tr>                                   
-            </tbody>
-        </table>
-        <div class="row">
-            <h2 class="section__heading col">Уборка квартир после ремонта</h2>
-        </div>
-        <table class="table table-bordered">
-            <tbody>
-              <tr>
-                <th scope="row">Условия обслуживания</th>
-                <td>до 40 кв. м</td>
-                <td>до 50 кв. м</td>
-                <td>до 60 кв. м</td>
-                <td>до 70 кв. м</td>
-                <td>до 80 кв. м</td>
-                <td>до 90 кв. м</td>
-                <td>до 100 кв. м</td>
-                <td>свыше 100 кв. м</td>
-              </tr> 
-              <tr>
-                <th scope="row">С мебелью</th>
-                <td>5500</td>
-                <td>6500</td>
-                <td>7500</td>
-                <td>8000</td>
-                <td>8500</td>
-                <td>9000</td>
-                <td>9500</td>
-                <td>от 110 руб. за кв.м</td>
-              </tr>
-              <tr>
-                <th scope="row">Без мебели</th>
-                <td>4500</td>
-                <td>5500</td>
-                <td>6000</td>
-                <td>6400</td>
-                <td>6800</td>
-                <td>7200</td>
-                <td>7600</td>
-                <td>от 90 руб. за кв.м</td>
-              </tr>                                   
-            </tbody>
-        </table>
-        <div class="row price-button">
-          <a href="./calculator/index.html" class="btn section__btn section__btn--primary">ЗАКАЗАТЬ</a>
-        </div>
-        <div class="row">
-            <h2 class="section__heading col">Уборка домов и коттеджей</h2>
-        </div>
-        <table class="table table-bordered">
-            <tbody>
-              <tr>
-                <th scope="row">Условия обслуживания</th>
-                <td>до 100 кв.м</td>
-                <td>до 150 кв.м</td>
-                <td>до 200 кв.м</td>
-                <td>до 250 кв.м</td>
-                <td>до 300 кв.м</td>
-                <td>до 350 кв.м</td>
-                <td>свыше 350 кв.м</td>
-              </tr> 
-              <tr>
-                <th scope="row">Экспресс</th>
-                <td>4000</td>
-                <td>4500</td>
-                <td>5000</td>
-                <td>5500</td>
-                <td>6000</td>
-                <td>6500</td>
-                <td>от 75 руб. кв.м</td>
-              </tr>
-              <tr>
-                <th scope="row">Генеральная</th>
-                <td>7000</td>
-                <td>10000</td>
-                <td>13000</td>
-                <td>17000</td>
-                <td>19000</td>
-                <td>22000</td>
-                <td>от 90 руб. кв.м</td>
-              </tr>
-              <tr>
-                <th scope="row">VIP</th>
-                <td>20000</td>
-                <td>24000</td>
-                <td>28000</td>
-                <td>32000</td>
-                <td>36000</td>
-                <td>38000</td>
-                <td>от 160 руб. кв.м</td>
-              </tr>                                  
-            </tbody>
-        </table>
-        <div class="row">
-            <h2 class="section__heading col">Уборка домой и коттеджей после ремонта (строительства)</h2>
-        </div>
-        <table class="table table-bordered">
-            <tbody>
-              <tr>
-                <th scope="row">Условия обслуживания</th>
-                <td>до 100 кв.м</td>
-                <td>до 150 кв.м</td>
-                <td>до 200 кв.м</td>
-                <td>до 250 кв.м</td>
-                <td>до 300 кв.м</td>
-                <td>до 350 кв.м</td>
-                <td>свыше 350 кв.м</td>
-              </tr> 
-              <tr>
-                <th scope="row">Дереаянный дом</th>
-                <td>10000</td>
-                <td>15000</td>
-                <td>20000</td>
-                <td>25000</td>
-                <td>30000</td>
-                <td>35000</td>
-                <td>от 160 руб. за кв.м</td>
-              </tr>
-              <tr>
-                <th scope="row">Коттедж</th>
-                <td>8000</td>
-                <td>12000</td>
-                <td>16000</td>
-                <td>20000</td>
-                <td>24000</td>
-                <td>28000</td>
-                <td>от 100 руб. за кв.м</td>
-              </tr>                                   
-            </tbody>
-        </table>
-        <div class="row" id="clean-office"> 
-            <h2 class="section__heading col">Уборка офисов</h2>
-        </div>
-        <table class="table table-bordered">
-            <tbody>
-              <tr>
-                <th scope="row">Виды работ</th>
-                <td>Площадь</td>
-                <td>Цена</td>
-              </tr> 
-              <tr>
-                <th scope="row" rowspan="4">Ежедневная уборка помещений, офисов<br>( минимальная сумма контракта 15 000 руб)</th>
-                <tr>
-                    <td>< 500 кв.м</td>
-                    <td>от 90 руб.кв.м в месяц</td>
-                </tr>
-                <tr>
-                    <td>500-1000 кв.м</td>
-                    <td>от 60 руб.кв.м в месяц</td>
-                </tr>
-                <tr>
-                    <td>1000-3000 кв.м</td>
-                    <td>от 40 руб.кв.м в месяц</td>
-                </tr>                  
-              </tr>
-              <tr>
-                <th scope="row">Уборка после ремонта</th>
-                <td></td>
-                <td>от 60 руб.кв.м</td>
-              </tr>                                   
-            </tbody>
-        </table>
-        <div class="row">
-            <h2 class="section__heading col">Уборка офисов</h2>
-        </div>
-        <table class="table table-bordered">
-            <tbody>
-              <tr>
-                <th scope="row"></th>
-                <td>до 40 кв.м</td>
-                <td>до 50 кв.м</td>
-                <td>до 60 кв.м</td>
-                <td>до 70 кв.м</td>
-                <td>до 80 кв.м</td>
-                <td>до 90 кв.м</td>
-                <td>до 100 кв.м</td>
-                <td>свыше 100 кв.м</td>
-              </tr> 
-              <tr>
-                <th scope="row">Генеральная уборка</th>
-                <td>5000</td>
-                <td>5500</td>
-                <td>6000</td>
-                <td>6500</td>
-                <td>7000</td>
-                <td>7500</td>
-                <td>8000</td>
-                <td>от 80 руб. за кв.м</td>
-              </tr>
-              <tr>
-                <th scope="row">Уборка после ремонта без мебели</th>
-                <td>4000</td>
-                <td>4800</td>
-                <td>5600</td>
-                <td>5900</td>
-                <td>6300</td>
-                <td>6500</td>
-                <td>6800</td>
-                <td>от 65 руб. за кв.м</td>
-              </tr>  
-              <tr>
-                <th scope="row">Уборка после ремонта c мебелью</th>
-                <td>5000</td>
-                <td>6000</td>
-                <td>7000</td>
-                <td>7400</td>
-                <td>7900</td>
-                <td>8200</td>
-                <td>8500</td>
-                <td>от 80 руб. за кв.м</td>
-              </tr>                                   
-            </tbody>
-        </table>
-        <div class="row price-button" >
-          <a href="./calculator/index.html" class="btn section__btn section__btn--primary">ЗАКАЗАТЬ</a>
-        </div>
-        <p class="price-note">С увеличением площади офиса, цена увеличивается из расчёта 65 руб./кв.м (уборка после ремонта без мебели)и 80 руб/кв.м (генеральная и после ремонта с мебелью)</p>
-        <p class="price-note">Уборка офисов за пределами МКАД дополнительно к прайс-листу 25 руб. за 1 км от МКАД, минимальный заказ 5000 руб.</p>
-        <p class="price-note">Выезд автомобиля со спец.оборудованием 1000 руб. по Москве и 1500 руб. по Московской области</p>
-        <div class="row mt-5">
-        <h2 class="section__heading col" id="dry-clean">Химчистка мягкой мебели</h2>
-        </div>
-        <table class="table table-bordered">
-            <thead>
-              <tr>
-                  <th scope="col" colspan="2">Наименование работ</th>
-                  <th scope="col">Ткань</th>
-                  <th scope="col">Кожа</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>                        
-                    <img  src="./img/price__sofa-2.jpg" alt="Sofa-2">
-                </td>
-                <td><span class="table__bold">2 посадочных места</span> (1,0-1,4 м. между подлокотниками)</td>
-                <td>2100</td>
-                <td>2600</td>
-              </tr>
-              <tr>
-                <td>                        
-                    <img  src="./img/price__sofa-3.jpg" alt="Sofa-3">
-                </td>
-                <td><span class="table__bold">3 посадочных места</span> (1,45-2,0 м. между подлокотниками)</td>
-                <td>2700</td>
-                <td>3300</td>
-              </tr>
-              <tr>
-                <td>                        
-                    <img  src="./img/price__sofa-corner-2.jpg" alt="Sofa-corner-2">
-                </td>
-                <td><span class="table__bold">Угловой диван на</span> 2 посадочных места + угловая секция</td>
-                <td>3300</td>
-                <td>4100</td>
-              </tr>
-              <tr>
-                <td>                        
-                    <img  src="./img/price__sofa-corner-3.jpg" alt="Sofa-corner-3">
-                </td>
-                <td><span class="table__bold">Большой угловой диван</span> (3 посадочных места + угловая секция)</td>
-                <td>4500</td>
-                <td>5750</td>
-              </tr>
-              <tr>
-                <td>                        
-                    <img  src="./img/price__pillow.jpg" alt="Pillow">
-                </td>
-                <td>Декоративная подушка (40х40)</td>
-                <td>150</td>
-                <td>200</td>
-              </tr>
-              <tr>
-                <td>                        
-                    <img  src="./img/price__pillow-back.jpg" alt="Pillow-back">
-                </td>
-                <td>Подушка спинки</td>
-                <td>250</td>
-                <td>350</td>
-              </tr>
-              <tr>
-                <td>                        
-                    <img  src="./img/price__armchair-1.jpg" alt="Armchair-1">
-                </td>
-                <td>Кресло для отдыха</td>
-                <td>1000</td>
-                <td>1500</td>
-              </tr>
-              <tr>
-                <td>                        
-                    <img  src="./img/price__armchair-2.jpg" alt="Armchair-2">
-                </td>
-                <td>Кресло со спальным механизмом</td>
-                <td>1300</td>
-                <td>1800</td>
-              </tr>
-              <tr>
-                <td>                        
-                    <img  src="./img/price__roller-pillow-1.jpg" alt="Roller-pillow-1">
-                </td>
-                <td>Пуф 40х40</td>
-                <td>400</td>
-                <td>650</td>
-              </tr>
-              <tr>
-                <td>                        
-                    <img  src="./img/price__roller-pillow-2.jpg" alt="Roller-pillow-2">
-                </td>
-                <td>Пуф 80х80</td>
-                <td>800</td>
-                <td>1200</td>
-              </tr>   
-              <tr>
-                <td>                        
-                    <img  src="./img/price__chair-1.jpg" alt="Chair-1">
-                </td>
-                <td>Стул без мягкой спинки</td>
-                <td>200</td>
-                <td>300</td>
-              </tr>   
-              <tr>
-                <td>                        
-                    <img  src="./img/price__chair-2.jpg" alt="Chair-2">
-                </td>
-                <td>Стул с мягкой спинкой</td>
-                <td>300</td>
-                <td>450</td>
-              </tr>   
-              <tr>
-                <td>                        
-                    <img  src="./img/price__chair-3.jpg" alt="Chair-3">
-                </td>
-                <td>Офисное кресло</td>
-                <td>350</td>
-                <td>500</td>
-              </tr>   
-              <tr>
-                <td>                        
-                    <img  src="./img/price__chair-4.jpg" alt="Chair-4">
-                </td>
-                <td>Офисный стул</td>
-                <td>150</td>
-                <td>200</td>
-              </tr>   
-              <tr>
-                <td>                        
-                    <img  src="./img/price__chair-5.jpg" alt="Chair-5">
-                </td>
-                <td>Кресло "директора"</td>
-                <td>650</td>
-                <td>800</td>
-              </tr>                  
-            </tbody>
-        </table>
-        <div class="row price-button">
-          <a href="./calculator/index.html" class="btn section__btn section__btn--primary">ЗАКАЗАТЬ</a>
-        </div>
-        <div class="row">
-            <h2 class="section__heading col">Химчистка матраса</h2>
-        </div>
-        <table class="table table-bordered">
-            <thead>
-              <tr>
-                  <th scope="col" colspan="2">Наименование работ</th>
-                  <th scope="col" colspan="2">Стоимость, руб</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>                        
-                    <img  src="./img/price__mattress-1.jpg" alt="Matress-1">
-                </td>
-                <td>Химчистка матраса 900х2000
-                <td>1350</td>
-                <td>1600</td>
-              </tr>
-              <tr>
-                <td>                        
-                    <img  src="./img/price__mattress-1.jpg" alt="Matress-1">
-                </td>
-                <td>Химчистка матраса 1200х2000
-                <td>1800</td>
-                <td>2200</td>
-              </tr>
-              <tr>
-                <td>                        
-                    <img  src="./img/price__mattress-2.jpg" alt="Matress-2">
-                </td>
-                <td>Химчистка матраса 1400х2000
-                <td>2100</td>
-                <td>2500</td>
-              </tr>
-              <tr>
-                <td>                        
-                    <img  src="./img/price__mattress-2.jpg" alt="Matress-2">
-                </td>
-                <td>Химчистка матраса 1600х2000
-                <td>2400</td>
-                <td>2800</td>
-              </tr>
-              <tr>
-                <td>                        
-                    <img  src="./img/price__mattress-3.jpg" alt="Matress-3">
-                </td>
-                <td>Химчистка матраса 1800х2000
-                <td>2700</td>
-                <td>3200</td>
-              </tr>
-              <tr>                    
-                <td colspan="2">Удаление запаха и пятен мочи
-                <td colspan="2">800</td>
-              </tr>
-            </tbody>
-        </table>
-        <div class="row price-button">
-          <a href="./calculator/index.html" class="btn section__btn section__btn--primary">ЗАКАЗАТЬ</a>
-        </div>
-        <div class="row">
-              <h2 class="section__heading col">Химчистка ковролина</h2>
           </div>
-        <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th scope="col">Наименование работ</th>
-                <th scope="col">(Цена, руб.) за м.кв</th>
-              </tr>
-            </thead>
+          <table class="table table-bordered">
             <tbody>
-              <tr>
-                <td>Химчистка ковролина площадью до 25 м.кв.</td>
-                <td>150</td>
-              </tr> 
-              <tr>
-                <td>Химчистка ковролина площадью от 26 до 50 м.кв.</td>
-                <td>110</td>
-              </tr>
-              <tr>
-                <td>Химчистка ковролина площадью от 51 до 100 м.кв.</td>
-                <td>90</td>
-              </tr>                                   
+            <tr>
+              <th scope="row">Условия обслуживания</th>
+              <td>1-ая квартира<br><span class="price-clean__text--small">(до 50 кв.м)</span></td>
+              <td>2-ая квартира<br><span class="price-clean__text--small">(до 70 кв.м)</span></td>
+              <td>3-ая квартира<br><span class="price-clean__text--small">(до 90 кв.м)</span></td>
+              <td>4-ая квартира<br><span class="price-clean__text--small">(до 120 кв.м)</span></td>
+              <td>более 4-х комнат</td>
+            </tr>
+            <tr>
+              <th scope="row">Экспресс</th>
+              <td>2500</td>
+              <td>3000</td>
+              <td>3500</td>
+              <td>4000</td>
+              <td>от 75 руб. за кв.м</td>
+            </tr>
+            <tr>
+              <th scope="row">Генеральная</th>
+              <td>4000</td>
+              <td>5000</td>
+              <td>6500</td>
+              <td>7000</td>
+              <td>от 90 руб. за кв.м</td>
+            </tr>
+            <tr>
+              <th scope="row">VIP</th>
+              <td>13000</td>
+              <td>17000</td>
+              <td>21000</td>
+              <td>24000</td>
+              <td>от 160 руб. за кв.м</td>
+            </tr>
             </tbody>
-        </table>
-        <div class="row price-button">
-          <a href="./calculator/index.html" class="btn section__btn section__btn--primary">ЗАКАЗАТЬ</a>
+          </table>
+          <div class="pb-5">
+            <p class="price-note"><sub>*<sub> Стоимость уборки применима к помещениям слабой и средней степени загрезненности. При наличии серьезных загрязнений может быть применима наценка от 10 до 100% к базовой цене.</p>
+            <p class="price-note"><sub>**<sub> Выезд автомобиля со спец.оборудованием 1000 руб. по Москве и 1500 руб. по  Моковской области (до 15 км от МКАД)</p>
+            <p class="price-note"><sub>***<sub> Уборка квартир в пределах МКАД по ценам прайс-листа не менее 3000 руб.</p>
+            <p class="price-note"><sub>***<sub> Уборка квартир за пределами МКАД дополнительно к прайс-листу 20 руб. за 1 км от МКАД, минимальный заказ 5000 руб.</p>
+          </div>
+          <div class="text-center pb-2">
+            <h1 class="h1">Что входит в уборку</h1>
+          </div>
+          <table class="table table-bordered">
+            <tbody>
+            <tr>
+              <th></th>
+              <td>ЭКСПРЕСС</td>
+              <td>ГЕНЕРАЛЬНАЯ</td>
+              <td>ВСЕ ВКЛЮЧЕНО</td>
+            </tr>
+            <tr>
+              <th colspan="4" scope="row" class="header">ВЫПОЛНЯЕТСЯ ВО ВСЕХ ПОМЕЩЕНИЯХ:</th>
+            </tr>
+            <tr>
+              <th scope="row">Cухая уборка пылесосом</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Влажная уборка полов и плинтусов</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Влажная уборка подоконников, радиаторов и труб</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с дверных блоков</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё зеркал и стеклянных поверхностей</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с аксессуаров, предметов интерьера (вазы, рамы картин и т.д.)</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с бытовой техники</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Вынос мусора, замена полиэтиленовых пакетов в мусорных корзинах</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытье мусорных корзин</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё дверных блоков, включая фурнитуру</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Влажная уборка всех видов корпусной мебели (крышек столов, полок, шкафов, тумбочек, внешних фасадов мебели и прочих поверхностей) до 2х метров</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с осветительных приборов до 2х метров</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с осветительных приборов (на всю высоту)</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Влажная уборка всех видов корпусной мебели (крышек столов, полок, шкафов, тумбочек, внешних фасадов мебели и прочих поверхностей на всю высоту)</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Влажная уборка внутренних поверхностей корпусной мебели (гардероб, шкафы, тумбочки, комоды и т.д., если они освобождены)</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Чистка пылесосом мягкой мебели</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Уход за кожаной мебелью специальными средствами</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с люстр и потолочных светильников (за исключением хрустальных люстр)</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление загрязнений средней и сильной степени сложности</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с карнизов, кондиционеров, гардин</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с верхних частей перегородок, антресолей</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Замена постельного белья</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Стирка, глажка и навеска штор</th>
+              <td>-</td>
+              <td>-</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Чистка жалюзи</th>
+              <td>-</td>
+              <td>-</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Обеспыливание стен и потолков</th>
+              <td>-</td>
+              <td>-</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th colspan="4" scope="row" class="header">САНУЗЕЛ:</th>
+            </tr>
+            <tr>
+              <th scope="row">Чистка и дезинфекция сантехники (смесители, раковины, унитазы, биде)</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё кафельной плитки локально (где имеются загрязнения)</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё душевых кабин и ванн</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление налёта и водного камня</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё кафельной плитки от потолка до пола</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё потолка</th>
+              <td>-</td>
+              <td>-</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th colspan="4" scope="row" class="header">КУХНЯ:</th>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё кухонной плиты, удаление следов жира</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Очистка кухонных рабочих поверхностей (столешницы, барные стойки)</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё стеновой панели кухонного гарнитура, удаление следов жира</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с вытяжки</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с кухонной техники</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё внешних фасадов кухонного гарнитура, удаление следов жира до 2х метров</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Чистка и дезинфекция сантехники</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Дезинфекция, влажная уборка места для хранения мусора</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытье внешних фасадов кухонного гарнитура, удаление следов жира (на всю высоту)</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с антресолей кухонного гарнитура</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытье внутренних поверхностей кухонного гарнитура (шкафчики, ящики и т.д., если они освобождены)</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё духовой и микроволновой печи внутри</th>
+              <td>-</td>
+              <td>-</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё холодильника внутри, размораживание</th>
+              <td>-</td>
+              <td>-</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытье грязной посуды (1 раковина)</th>
+              <td>-</td>
+              <td>-</td>
+              <td>+</td>
+            </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="row">
-            <h2 class="section__heading col">Примечания:</h2>
+        <div class="price-clean__wrapper">
+          <div class="row pb-3">
+            <h2 class="section__heading col">Уборка коттеджей, таунхаусов и домов</h2>
+          </div>
+          <table class="table table-bordered">
+            <tbody>
+            <tr>
+              <th scope="row">Условия обслуживания</th>
+              <td>до 100 кв.м</td>
+              <td>до 150 кв.м</td>
+              <td>до 200 кв.м</td>
+              <td>до 250 кв.м</td>
+              <td>до 300 кв.м</td>
+              <td>до 350 кв.м</td>
+              <td>свыше 350 кв.м</td>
+            </tr>
+            <tr>
+              <th scope="row">Экспресс</th>
+              <td>4000</td>
+              <td>4500</td>
+              <td>5000</td>
+              <td>5500</td>
+              <td>6000</td>
+              <td>6500</td>
+              <td>от 75 руб. кв.м</td>
+            </tr>
+            <tr>
+              <th scope="row">Генеральная</th>
+              <td>7000</td>
+              <td>10000</td>
+              <td>13000</td>
+              <td>17000</td>
+              <td>19000</td>
+              <td>22000</td>
+              <td>от 90 руб. кв.м</td>
+            </tr>
+            <tr>
+              <th scope="row">Все включено</th>
+              <td>20000</td>
+              <td>24000</td>
+              <td>28000</td>
+              <td>32000</td>
+              <td>36000</td>
+              <td>38000</td>
+              <td>от 160 руб. кв.м</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="pb-5">
+            <p class="price-note"><sub>*<sub> Стоимость уборки применима к помещениям слабой и средней степени загрезненности. При наличии серьезных загрязнений может быть применима наценка от 10 до 100% к базовой цене.</p>
+            <p class="price-note"><sub>**<sub> Выезд автомобиля со спец.оборудованием 1000 руб. по Москве и 1500 руб. по Московской области (до 15 км от МКАД).</p>
+            <p class="price-note"><sub>***<sub> Уборка домов и коттеджей в пределах МКАД по ценам прайс-листа не менее 3000 руб.</p>
+            <p class="price-note"><sub>****<sub> Уборка домов и коттеджей за пределами МКАД дополнительно к прайс-листу 20 руб. за 1 км от МКАД, минимальный заказ 5000 руб.</p>
+            <p class="price-note"><sub>*****<sub> В генеральную уборку не входят: уборка приусадебной территории, уборка бассейнов, очистка каминной системы и дымоходов.</p>
+            <p class="price-note"><sub>******<sub> Не включает в себя мойку окон альпинистами и химчистку на производстве промышленным способом.</p>
+          </div>
+          <div class="text-center pb-2">
+            <h1 class="h1">Что входит в уборку</h1>
+          </div>
+          <table class="table table-bordered">
+            <tbody>
+            <tr>
+              <th></th>
+              <td>ЭКСПРЕСС</td>
+              <td>ГЕНЕРАЛЬНАЯ</td>
+              <td>ВСЕ ВКЛЮЧЕНО</td>
+            </tr>
+            <tr>
+              <th colspan="4" scope="row" class="header">ВЫПОЛНЯЕТСЯ ВО ВСЕХ ПОМЕЩЕНИЯХ:</th>
+            </tr>
+            <tr>
+              <th scope="row">Cухая уборка пылесосом</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Влажная уборка полов и плинтусов</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Влажная уборка подоконников, радиаторов и труб</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с дверных блоков</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё зеркал и стеклянных поверхностей</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с аксессуаров, предметов интерьера (вазы, рамы картин и т.д.)</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с бытовой техники</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Вынос мусора, замена полиэтиленовых пакетов в мусорных корзинах</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытье мусорных корзин</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё дверных блоков, включая фурнитуру</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Влажная уборка всех видов корпусной мебели (крышек столов, полок, шкафов, тумбочек, внешних фасадов мебели и прочих поверхностей) до 2х метров</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с осветительных приборов до 2х метров</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с осветительных приборов (на всю высоту)</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Влажная уборка всех видов корпусной мебели (крышек столов, полок, шкафов, тумбочек, внешних фасадов мебели и прочих поверхностей на всю высоту)</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Влажная уборка внутренних поверхностей корпусной мебели (гардероб, шкафы, тумбочки, комоды и т.д., если они освобождены)</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Чистка пылесосом мягкой мебели</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Уход за кожаной мебелью специальными средствами</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с люстр и потолочных светильников (за исключением хрустальных люстр)</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление загрязнений средней и сильной степени сложности</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с карнизов, кондиционеров, гардин</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с верхних частей перегородок, антресолей</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Замена постельного белья</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Стирка, глажка и навеска штор</th>
+              <td>-</td>
+              <td>-</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Чистка жалюзи</th>
+              <td>-</td>
+              <td>-</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Обеспыливание стен и потолков</th>
+              <td>-</td>
+              <td>-</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th colspan="4" scope="row" class="header">САНУЗЕЛ:</th>
+            </tr>
+            <tr>
+              <th scope="row">Чистка и дезинфекция сантехники (смесители, раковины, унитазы, биде)</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё кафельной плитки локально (где имеются загрязнения)</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё душевых кабин и ванн</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление налёта и водного камня</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё кафельной плитки от потолка до пола</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё потолка</th>
+              <td>-</td>
+              <td>-</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th colspan="4" scope="row" class="header">КУХНЯ:</th>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё кухонной плиты, удаление следов жира</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Очистка кухонных рабочих поверхностей (столешницы, барные стойки)</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё стеновой панели кухонного гарнитура, удаление следов жира</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с вытяжки</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с кухонной техники</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё внешних фасадов кухонного гарнитура, удаление следов жира до 2х метров</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Чистка и дезинфекция сантехники</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Дезинфекция, влажная уборка места для хранения мусора</th>
+              <td>+</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытье внешних фасадов кухонного гарнитура, удаление следов жира (на всю высоту)</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Удаление пыли с антресолей кухонного гарнитура</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытье внутренних поверхностей кухонного гарнитура (шкафчики, ящики и т.д., если они освобождены)</th>
+              <td>-</td>
+              <td>+</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё духовой и микроволновой печи внутри</th>
+              <td>-</td>
+              <td>-</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё холодильника внутри, размораживание</th>
+              <td>-</td>
+              <td>-</td>
+              <td>+</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытье грязной посуды (1 раковина)</th>
+              <td>-</td>
+              <td>-</td>
+              <td>+</td>
+            </tr>
+            </tbody>
+          </table>
         </div>
-        <p class="price-note">Точная стоимость химчистки мягкой мебели в Москве может быть определена мастером при осмотре.</p>
-        <p class="price-note">Минимальная стоимость ЗАКАЗА - 3000р.</p>
-        <p class="price-note">Стоимость уборки применима к слабой и средней степени загрязненности. При наличии серьезных загрязнений может быть применима наценка от 10% и более к базовой цене.</p>
+        <div class="price-clean__wrapper">
+          <div class="row pb-3">
+            <h2 class="section__heading col">Уборка квартир после ремонта</h2>
+          </div>
+          <table class="table table-bordered">
+            <tbody>
+            <tr>
+              <th scope="row">Условия обслуживания</th>
+              <td>до 40 кв. м</td>
+              <td>до 50 кв. м</td>
+              <td>до 60 кв. м</td>
+              <td>до 70 кв. м</td>
+              <td>до 80 кв. м</td>
+              <td>до 90 кв. м</td>
+              <td>до 100 кв. м</td>
+              <td>свыше 100 кв. м</td>
+            </tr>
+            <tr>
+              <th scope="row">С мебелью</th>
+              <td>5500</td>
+              <td>6500</td>
+              <td>7500</td>
+              <td>8000</td>
+              <td>8500</td>
+              <td>9000</td>
+              <td>9500</td>
+              <td>от 110 руб. за кв.м</td>
+            </tr>
+            <tr>
+              <th scope="row">Без мебели</th>
+              <td>4500</td>
+              <td>5500</td>
+              <td>6000</td>
+              <td>6400</td>
+              <td>6800</td>
+              <td>7200</td>
+              <td>7600</td>
+              <td>от 90 руб. за кв.м</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="pb-5">
+            <p class="price-note"><sub>*<sub> Стоимость уборки применима к помещениям слабой и средней степени загрезненности. При наличии серьезных загрязнений может быть применима наценка от 10 до 100% к базовой цене.</p>
+            <p class="price-note"><sub>**<sub> Уборка после ремонта за пределами МКАД дополнительно к прайс-листу 25 руб. за 1 км от МКАД, минимальный заказ 5000 руб.</p>
+            <p class="price-note"><sub>***<sub> Выезд автомобиля со спец.оборудованием 1000 руб. по Москве и 1500 руб. по Московской области (до 15 км от МКАД).</p>
+          </div>
+          <div class="text-center pb-2">
+            <h1 class="h1">Что входит в уборку</h1>
+          </div>
+          <table class="table table-bordered">
+            <tbody>
+            <tr>
+              <th scope="row" class="header">ЖИЛЫЕ КОМНАТЫ:</th>
+            </tr>
+            <tr>
+              <th scope="row">Сухая и влажная уборка полов и плинтусов</th>
+            </tr>
+            <tr>
+              <th scope="row">Обеспыливание стен и потолков</th>
+            </tr>
+            <tr>
+              <th scope="row">Мытье осветительных приборов (хрустальные люстры, муранское стекло обсуждается с менеджером)</th>
+            </tr>
+            <tr>
+              <th scope="row">Чистка подоконников и радиаторов батарей</th>
+            </tr>
+            <tr>
+              <th scope="row">Чистка межплиточных швов</th>
+            </tr>
+            <tr>
+              <th scope="row">Удаление следов затирочного материала , цемента, скотча, наклейки, строительной пены</th>
+            </tr>
+            <tr>
+              <th scope="row">Чистка зеркал и зеркальных элементов</th>
+            </tr>
+            <tr>
+              <th scope="row">Сухая и влажная уборка дверных блоков, дверей и фурнитуры</th>
+            </tr>
+            <tr>
+              <th scope="row">Удаление строительной пыли со всех поверхностей мебели (снаружи и внутри)</th>
+            </tr>
+            <tr>
+              <th scope="row">Чистка всех горизонтальных поверхностей на всю высоту</th>
+            </tr>
+            <tr>
+              <th scope="row">Сухая чистка мебели</th>
+            </tr>
+            <tr>
+              <th scope="row">Чистка розеток и выключателей</th>
+            </tr>
+            <tr>
+              <th scope="row">Распакуем новую мебель</th>
+            </tr>
+            <tr>
+              <th scope="row">Мытье всей бытовой техники снаружи и изнутри (при условии, что техника новая)</th>
+            </tr>
+            <tr>
+              <th scope="row">Сбор и вынос малогабаритного строительного мусора (до 10 кг)</th>
+            </tr>
+            <tr>
+              <th scope="row" class="header">САНУЗЛЫ:</th>
+            </tr>
+            <tr>
+              <th scope="row">Чистка плитки и межплиточных швов на всю высоту</th>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё потолков</th>
+            </tr>
+            <tr>
+              <th scope="row">Чистка и дезинфекция сантехники и смесителей </th>
+            </tr>
+            <tr>
+              <th scope="row">Удаление следов затирочного материала, цемента, краски, скотча</th>
+            </tr>
+            <tr>
+              <th scope="row">Чистка зеркал и зеркальных элементов</th>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="price-clean__wrapper">
+          <div class="row" id="clean-office">
+            <h2 class="section__heading col">Уборка офисов</h2>
+          </div>
+          <table class="table table-bordered">
+            <tbody>
+            <tr>
+              <th scope="row"></th>
+              <td>до 40 кв.м</td>
+              <td>до 50 кв.м</td>
+              <td>до 60 кв.м</td>
+              <td>до 70 кв.м</td>
+              <td>до 80 кв.м</td>
+              <td>до 90 кв.м</td>
+              <td>до 100 кв.м</td>
+              <td>свыше 100 кв.м</td>
+            </tr>
+            <tr>
+              <th scope="row">Генеральная уборка</th>
+              <td>5000</td>
+              <td>5500</td>
+              <td>6000</td>
+              <td>6500</td>
+              <td>7000</td>
+              <td>7500</td>
+              <td>8000</td>
+              <td>от 80 руб. за кв.м</td>
+            </tr>
+            <tr>
+              <th scope="row">Уборка после ремонта без мебели</th>
+              <td>4000</td>
+              <td>4800</td>
+              <td>5600</td>
+              <td>5900</td>
+              <td>6300</td>
+              <td>6500</td>
+              <td>6800</td>
+              <td>от 65 руб. за кв.м</td>
+            </tr>
+            <tr>
+              <th scope="row">Уборка после ремонта c мебелью</th>
+              <td>5000</td>
+              <td>6000</td>
+              <td>7000</td>
+              <td>7400</td>
+              <td>7900</td>
+              <td>8200</td>
+              <td>8500</td>
+              <td>от 80 руб. за кв.м</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="pb-5">
+            <p class="price-note"><sub>*<sub> С увеличением площади офиса, цена увеличивается из расчёта 65 руб./кв.м (уборка после ремонта без мебели)и 80 руб/кв.м (генеральная и после ремонта с мебелью)</p>
+            <p class="price-note"><sub>**<sub> Уборка офисов за пределами МКАД дополнительно к прайс-листу 25 руб. за 1 км от МКАД, минимальный заказ 5000 руб.</p>
+            <p class="price-note"><sub>***<sub> Выезд автомобиля со спец.оборудованием 1000 руб. по Москве и 1500 руб. по Московской области</p>
+          </div>
+        </div>
+        <div class="price-clean__wrapper">
+          <div class="row" id="clean-window">
+            <h2 class="section__heading col">Мойка окон</h2>
+          </div>
+          <table class="table table-bordered">
+            <tbody>
+            <tr>
+              <th scope="row">Окна</th>
+              <td>Одна створка</td>
+            </tr>
+            <tr>
+              <th scope="row">Одна рама</th>
+              <td>200</td>
+            </tr>
+            <tr>
+              <th scope="row">Две рамы (деревянные окна)</th>
+              <td>450</td>
+            </tr>
+            <tr>
+              <th scope="row">Жалюзи</th>
+              <td>250 руб.(1 комплект без снятия)</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё оконных решеток</th>
+              <td>200</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё москитных сеток</th>
+              <td>100 руб./1шт.</td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё стеклянных перегородок, сложного и нестандартного остекления</th>
+              <td>150 руб. м² </td>
+            </tr>
+            <tr>
+              <th scope="row">Мытьё балконной двери</th>
+              <td>300</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="pb-5">
+            <p class="price-note"><sub>*<sub> Цены на мытьё окон в Москве включают в себя мытьё оконных рам и подоконников, за две поверхности.</p>
+            <p class="price-note"><sub>**<sub> Возможно увеличение цены на мытьё окон из-за сложности конструкции, трудной доступности, а так же высокой степени загрязнения (скотч, наклейка, краска, пленка, клей).</p>
+            <p class="price-note"><sub>***<sub> По соображениям безопасности, мытье глухих створок снаружи, к которым нет прямого доступа, не производится.</p>
+            <p class="price-note"><sub>****<sub> Минимальный заказ на мытьё окон без уборки в пределах МКАД 3000 руб.</p>
+            <p class="price-note"><sub>*****<sub> Минимальный заказ на мытьё окон без уборки за пределами МКАД дополнительно к прайс-листу 25 руб. за 1 км от МКАД, минимальный заказ 5000 руб. При заказе вместе с уборкой -  без ограничений.</p>
+            <p class="price-note"><sub>******<sub> В зимний период мытье окон осуществляется, в зависимости от погодных условий (температура не менее 0 градусов, отсутствие порывов ветра и т.д.) стоимость мытья окон к базовой цене +50%.</p>
+          </div>
+        </div>
+        <div class="price-clean__wrapper">
+          <div class="row price-button" >
+            <a href="./calculator/index.html" class="btn section__btn section__btn--primary">ЗАКАЗАТЬ</a>
+          </div>
+        </div>
       </div>
     </section>
 </body>
