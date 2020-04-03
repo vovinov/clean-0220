@@ -4,6 +4,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 20px;
+
+    &--calculator {
+        margin-bottom: 20px;
+    }
 }
 
 .navigation__img {
@@ -40,6 +44,10 @@
     font-size: 30px;
     line-height: 33px;
     color: $white;
+
+    &--primary {
+        color: $primary; 
+    }
 }
 
 .navigation__box {
