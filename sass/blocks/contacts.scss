@@ -12,6 +12,11 @@
     border: 2px solid $primary;
     background-color: $white;
     position: relative;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
 }
 
 .contacts__link {
@@ -22,5 +27,26 @@
 }
 
 .contacts__icon {
-    font-size: 30px;
+    font-size: 30px;   
+
+    &--instagram {
+        &:hover {
+            color: rgb(166,48,190); 
+            
+        }
+    }
+
+    &--whatsapp {
+        &:hover { color: rgb(0,230,118); }
+    }
+
+    
+    &--viber {
+        &:hover { color: rgb(123,81,157); }
+    }
+
+    
+    &--telegram {
+        &:hover { color: rgb(54,174,226); }
+    }
 }

@@ -168,6 +168,11 @@
     }
 }
 
+.prices-card__row {
+    width: 100%;
+    justify-content: space-between;
+}
+
 .prices-card__price {
     align-self: flex-end;
     font-size: 36px;
