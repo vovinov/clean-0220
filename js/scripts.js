@@ -182,7 +182,53 @@ switchValueArmchairs.addEventListener('change', () => {
   armchairsValue.textContent = value;
 })
 
-// puff
+// Prices office selector
+
+const value_office = {
+  leather: '500',
+  cloth: '350',
+  leather_king: '800',
+  cloth_king: '650',
+};
+
+const selectValueOffice = document.querySelector('#select-6');
+const switchValueOffice = document.querySelector('#switcher-6');
+const officeValue = document.querySelector('#prices-card__office');
+const officeImg = document.querySelector('.prices-card__img--office');
+
+switchValueOffice.addEventListener('change', () => {
+  const {leather, cloth, leather_king, cloth_king} = value_office;
+  let value;
+  switch (selectValueOffice.selectedIndex) {
+    case 0:
+      value = switchValueOffice.checked ? cloth : leather;
+      officeImg.src = switchValueOffice.checked ? "/img/picture_chairOffice_cloth.jpg" : "/img/picture_chairOffice_leather.jpg";
+      break;
+    case 1:
+      value = switchValueOffice.checked ? cloth_king : leather_king;
+      officeImg.src = switchValueOffice.checked ? "/img/picture_kingChairs_cloth.jpg" : "/img/picture_kingChairs_leather.jpg";
+      break;
+  }
+  officeValue.textContent = value;
+})
+
+selectValueOffice.addEventListener('change', (e) => {
+  const {leather, cloth, leather_king, cloth_king} = value_office;
+  let value;
+  switch (e.target.selectedIndex) {
+    case 0:
+      value = switchValueOffice.checked ? cloth : leather;
+      officeImg.src = switchValueOffice.checked ? "/img/picture_chairOffice_cloth.jpg" : "/img/picture_chairOffice_leather.jpg";
+      break;
+    case 1:
+      value = switchValueOffice.checked ? cloth_king : leather_king;
+      officeImg.src = switchValueOffice.checked ? "/img/picture_kingChairs_cloth.jpg" : "/img/picture_kingChairs_leather.jpg";
+      break;
+  }
+  officeValue.textContent = value;
+})
+
+//  Prices puff selector
 
 const value_puff = {
   leather_40: '650',
