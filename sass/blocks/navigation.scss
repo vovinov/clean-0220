@@ -22,7 +22,6 @@
 
 .navigation__list {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     padding: 5px 10px;
     margin-bottom: 15px;
@@ -33,10 +32,15 @@
     background-color: $primary;
     font-size: 16px;
     font-weight: 700;
+    margin: 0 10px 10px 0;
 
     &:hover {
         transform: scale(1.1);
     }
+}
+
+.navigation-price__link {
+    margin: 0 10px 10px 0;
 }
 
 .navigation__phone {
