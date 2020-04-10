@@ -375,6 +375,7 @@ $(document).ready(function() {
   }
 
   // Comments - works
+
   $('.comments__row').slick({
     arrows: true,
     dots: true,
